@@ -3,17 +3,17 @@ DataScienceTraining
 
 tutorials, examples and references for data analysis
 
-# Setup 
+## Setup 
 
-## OSX or Linux
+### OSX or Linux
 
 ```
     git clone https://github.com/kelleyrw/DataScienceTraining.git dst
     cd dst
-    export DST=%PWD
+    export DST=$PWD
 ```
 
-## Windows
+### Windows
 
 It's complicated...
 
