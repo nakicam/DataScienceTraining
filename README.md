@@ -3,4 +3,17 @@ DataScienceTraining
 
 tutorials, examples and references for data analysis
 
-Paths are referenced env var DST to point to this directory.
+# Setup 
+
+## OSX or Linux
+
+```
+    git clone https://github.com/kelleyrw/DataScienceTraining.git dst
+    cd dst
+    export DST=%PWD
+```
+
+## Windows
+
+It's complicated...
+
