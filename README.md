@@ -10,7 +10,7 @@ tutorials, examples and references for data analysis
 ```
     git clone https://github.com/kelleyrw/DataScienceTraining.git dst
     cd dst
-    export DST=$PWD
+    export DST=$PWD # put this in your bashrc
 ```
 
 ### Windows
