@@ -43,3 +43,19 @@ test DB:
 sqlplus hr/oracle@//localhost:1521/ORCL
 select * from employees;
 
+--------------------------------------------------
+Create a user for yourself
+--------------------------------------------------
+
+login as admin and create user
+
+[rwk7t@tensor-3 abc_db]$  sqlplus sys/oracle@//localhost:1521/ORCL as sysdba
+SQL> create user abc identified by abc;
+SQL> grant all privileges to abc;
+SQL> quit;
+
+login as user to test
+
+[rwk7t@tensor-3 abc_db]$  sqlplus abc/abc@//localhost:1521/ORCL
+SQL> create table foo(id number);
+SQL> drop table foo;
