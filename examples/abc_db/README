@@ -1,0 +1,45 @@
+
+--------------------------------------------------
+Install Oracle Database using a VM
+--------------------------------------------------
+
+Follow these instructions:
+https://dimitrisli.wordpress.com/2012/08/08/how-to-install-oracle-database-on-mac-os-any-version/
+
+Files to install:
+Virtual Box if you don't have it: https://www.virtualbox.org/
+Oracle Linux VM (with database installed): http://download.oracle.com/otn/other/virtualbox/dd/Oracle_DB_Developer_VM_new.ova
+
+SQL Developer for mac
+http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
+
+may also require:
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+OXS command line stuff
+unpack all of these zip files into the same directory.  I did /usr/local/oracle/client/11.2
+http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+
+install rlwrap to make sqlplus work as expected:
+brew install rlwrap
+
+setup this in bashrc:
+function oracle_setup 
+{
+    alias sqlplus='rlwrap sqlplus'
+    export ORACLE_HOME=/usr/local/oracle/instant_client/11.2
+    export PATH=$ORACLE_HOME:$PATH
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ORACLE_HOME
+}
+
+I checked this in:
+https://github.com/kelleyrw/Config/blob/master/oracle/oracle_setup.sh
+
+test DB:
+sqlplus hr/oracle@//localhost:1521/ORCL
+select * from employees;
+
