@@ -17,11 +17,24 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 
 OXS command line stuff
 unpack all of these zip files into the same directory.  I did /usr/local/oracle/client/11.2
-http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
-http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
-http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
-http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
-http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html
+http://download.oracle.com/otn/mac/instantclient/11204/instantclient-basic-macos.x64-11.2.0.4.0.zip
+http://download.oracle.com/otn/mac/instantclient/11204/instantclient-jdbc-macos.x64-11.2.0.4.0.zip
+http://download.oracle.com/otn/mac/instantclient/11204/instantclient-sqlplus-macos.x64-11.2.0.4.0.zip
+http://download.oracle.com/otn/mac/instantclient/11204/instantclient-sdk-macos.x64-11.2.0.4.0.zip
+http://download.oracle.com/otn/mac/instantclient/11204/instantclient-tools-macos.x64-11.2.0.4.0.zip
+
+# good instructions
+http://blog.codiez.co.za/2013/09/setup-oracle-instant-client-ruby-oci8-gem-mac/
+
+# tnsnames.ora file:
+ORCL =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = 127.0.0.1)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = ORCL)
+    )
+  )
 
 install rlwrap to make sqlplus work as expected:
 brew install rlwrap
@@ -31,10 +44,16 @@ function oracle_setup
 {
     alias sqlplus='rlwrap sqlplus'
     alias sqlabc='sqlplus abc/abc@//localhost:1521/ORCL'
-    export ORACLE_HOME=/usr/local/oracle/instant_client/11.2
-    export PATH=$ORACLE_HOME:$PATH
-    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ORACLE_HOME
+    export ORACLE_BASE=/usr/local/oracle
+    export ORACLE_HOME=$ORACLE_BASE/product/instantclient_64/11.2.0.4.0
+    export PATH=$ORACLE_HOME/bin:$PATH
+    export DYLD_LIBRARY_PATH=$ORACLE_HOME/lib:$DYLD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=$ORACLE_HOME/lib:$LD_LIBRARY_PATH
+    export TNS_ADMIN=$ORACLE_BASE/admin/network
+    export SQLPATH=$ORACLE_HOME/sqlplus/admin
+    export ORACLE_SID=ORCL
 }
+
 
 I checked this in:
 https://github.com/kelleyrw/Config/blob/master/oracle/oracle_setup.sh
@@ -57,6 +76,7 @@ SQL> quit;
 login as user to test
 
 [rwk7t@tensor-3 abc_db]$  sqlplus abc/abc@//localhost:1521/ORCL
+[rwk7t@tensor-3 abc_db]$  sqlplus abc/abc@ORCL
 SQL> create table foo(id number);
 SQL> drop table foo;
 
