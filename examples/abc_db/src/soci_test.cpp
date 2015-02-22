@@ -6,34 +6,31 @@
 #include <string>
 #include <exception>
 
-using namespace soci;
-using namespace std;
-
 int main()
 try
 {
-    soci::session sql(oracle, "service=orcl user=abc password=abc");
+    soci::session sql(soci::oracle, "service=orcl user=abc password=abc");
 
     int count;
-    sql << "select count(*) from A", into(count);
-    cout << "We have " << count << " entries in the A.\n";
+    sql << "select count(*) from A", soci::into(count);
+    std::cout << "We have " << count << " entries in the A.\n";
 
     const std::string name = "arg 86";
-    string team;
+    std::string team;
     soci::indicator ind;
-    sql << "select name from A where name = :name", into(team, ind), use(name);
+    sql << "select name from A where name = :name", soci::into(team, ind), soci::use(name);
 
-    if (ind == i_ok)
+    if (ind == soci::i_ok)
     {
-        cout << "The team is " << team << '\n';
+        std::cout << "The team is " << team << '\n';
     }
     else
     {
-        cout << "There is no team for " << name << '\n';
+        std::cout << "There is no team for " << name << '\n';
     }
 }
-catch (exception const &e)
+catch (std::exception const &e)
 {
-    cerr << "Error: " << e.what() << '\n';
+    std::cerr << "Error: " << e.what() << '\n';
 }
 
