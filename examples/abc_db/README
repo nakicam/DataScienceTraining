@@ -1,4 +1,3 @@
-
 --------------------------------------------------
 Install Oracle Database using a VM
 --------------------------------------------------
@@ -31,6 +30,7 @@ setup this in bashrc:
 function oracle_setup 
 {
     alias sqlplus='rlwrap sqlplus'
+    alias sqlabc='sqlplus abc/abc@//localhost:1521/ORCL'
     export ORACLE_HOME=/usr/local/oracle/instant_client/11.2
     export PATH=$ORACLE_HOME:$PATH
     export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$ORACLE_HOME
@@ -59,3 +59,8 @@ login as user to test
 [rwk7t@tensor-3 abc_db]$  sqlplus abc/abc@//localhost:1521/ORCL
 SQL> create table foo(id number);
 SQL> drop table foo;
+
+--------------------------------------------------
+create the ABC database
+--------------------------------------------------
+
