@@ -84,3 +84,17 @@ SQL> drop table foo;
 create the ABC database
 --------------------------------------------------
 
+cd sql
+sqlplus abc/abc@ORCL
+
+SQL> @deploy;
+
+(or you can do it from the SQL developer)
+
+--------------------------------------------------
+connect to python
+--------------------------------------------------
+
+pip install cx_oracle
+
+then run the abc_tests ipython notebook (cells 1 and 2).
