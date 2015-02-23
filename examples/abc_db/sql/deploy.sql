@@ -1,10 +1,10 @@
 -- drop existing
 
-drop table b_obs;
-drop table b;
-drop table a;
-drop sequence b_seq;
-drop sequence a_seq;
+drop table player_images;
+drop table players;
+drop table teams;
+drop sequence players_id_seq;
+drop sequence teams_id_seq;
 
 -- deploy
 
