@@ -10,6 +10,8 @@ drop sequence array_data_id_seq;
 -- deploy
 
 @abc.ddl
+@players_view.sql
+@teams_view.sql
 
 -- load data
 
