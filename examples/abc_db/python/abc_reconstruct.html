@@ -9175,7 +9175,7 @@ HNe18qbty8blPwD+1NdlvVx7513tale72tWudrWr/Qh2VSy/2tWudrWrXe1qV/sR7OpEXe1qV7va
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">conn</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">pswd</span><span class="p">,</span> <span class="n">sid</span><span class="p">)</span>
@@ -43925,6 +43925,232 @@ Team {
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 1 loops, best of 3: 2.24 s per loop
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="ui-for-players">UI for players</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="k">def</span> <span class="nf">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">load</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+
+    <span class="n">sql</span> <span class="o">=</span> <span class="s">&quot;&quot;&quot;</span>
+<span class="s">select unique player_id </span>
+<span class="s">from teams_view natural join players_view</span>
+<span class="s">&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">where</span> <span class="o">!=</span> <span class="s">&quot;&quot;</span><span class="p">:</span>
+        <span class="n">sql</span> <span class="o">+=</span> <span class="s">&quot;where </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">where</span>
+        
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">cursor</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">sql</span><span class="p">)</span>
+        <span class="n">records</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+    <span class="k">except</span> <span class="n">odb</span><span class="o">.</span><span class="n">DatabaseError</span><span class="p">,</span> <span class="n">exc</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">exc</span><span class="p">)</span>
+
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        
+    <span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="n">Player</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">record</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">records</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">load</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">playerss</span><span class="p">:</span> <span class="n">player</span><span class="o">.</span><span class="n">Load</span><span class="p">()</span>
+            
+    <span class="k">return</span> <span class="n">players</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &gt; 0&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">players</span><span class="p">)</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+[Player {
+    name: t1p1
+    team: team1
+    id: 1
+    goals: 7
+    starts: 12
+    image1: ArrayInfo{avg: 108.5905, std: 43.8245, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.9964, std: 72.8447, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 142.0293, std: 52.1584, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t2p3
+    team: team2
+    id: 6
+    goals: 0
+    starts: 1
+    image1: ArrayInfo{avg: 108.4533, std: 43.8026, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2245, std: 73.4005, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6174, std: 52.3179, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t1p2
+    team: team1
+    id: 2
+    goals: 0
+    starts: 2
+    image1: ArrayInfo{avg: 108.4242, std: 43.7371, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2595, std: 73.3658, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6367, std: 52.2846, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t2p1
+    team: team2
+    id: 4
+    goals: 8
+    starts: 5
+    image1: ArrayInfo{avg: 108.4725, std: 43.7969, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2670, std: 73.3732, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6412, std: 52.2884, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t2p2
+    team: team2
+    id: 5
+    goals: 0
+    starts: 0
+    image1: ArrayInfo{avg: 108.4984, std: 43.8300, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2086, std: 73.3893, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6110, std: 52.3031, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t1p3
+    team: team1
+    id: 3
+    goals: 11
+    starts: 5
+    image1: ArrayInfo{avg: 108.4238, std: 43.7412, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2408, std: 73.3722, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.7350, std: 52.3219, dtype: not loaded, shape:    not loaded}
+}]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &lt; 3&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">players</span><span class="p">)</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+[Player {
+    name: t2p3
+    team: team2
+    id: 6
+    goals: 0
+    starts: 1
+    image1: ArrayInfo{avg: 108.4533, std: 43.8026, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2245, std: 73.4005, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6174, std: 52.3179, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t2p1
+    team: team2
+    id: 4
+    goals: 8
+    starts: 5
+    image1: ArrayInfo{avg: 108.4725, std: 43.7969, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2670, std: 73.3732, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6412, std: 52.2884, dtype: not loaded, shape:    not loaded}
+}, Player {
+    name: t2p2
+    team: team2
+    id: 5
+    goals: 0
+    starts: 0
+    image1: ArrayInfo{avg: 108.4984, std: 43.8300, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2086, std: 73.3893, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.6110, std: 52.3031, dtype: not loaded, shape:    not loaded}
+}]
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &gt; 0 and player_goals &gt; 10&#39;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">players</span><span class="p">)</span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+[Player {
+    name: t1p3
+    team: team1
+    id: 3
+    goals: 11
+    starts: 5
+    image1: ArrayInfo{avg: 108.4238, std: 43.7412, dtype: not loaded, shape:    not loaded}
+    image2: ArrayInfo{avg: 155.2408, std: 73.3722, dtype: not loaded, shape:    not loaded}
+    image3: ArrayInfo{avg: 141.7350, std: 52.3219, dtype: not loaded, shape:    not loaded}
+}]
 
 </pre>
 </div>
