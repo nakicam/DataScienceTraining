@@ -1852,7 +1852,7 @@ Connection successful
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-[(&apos;team2&apos;, 2, 74.2968334767957, 120.244689518132, 3, 183, 275, 3, -9999, &apos;uint8&apos;, &lt;cx_Oracle.LOB object at 0x10dc6e630&gt;)]
+[(&apos;team2&apos;, 2, 74.2968334767957, 120.244689518132, 3, 183, 275, 3, -9999, &apos;uint8&apos;, &lt;cx_Oracle.LOB object at 0x10d46e630&gt;)]
 
 </pre>
 </div>
@@ -9175,7 +9175,7 @@ HNe18qbty8blPwD+1NdlvVx7513tale72tWudrWr/Qh2VSy/2tWudrWrXe1qV/sR7OpEXe1qV7va
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">conn</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">pswd</span><span class="p">,</span> <span class="n">sid</span><span class="p">)</span>
@@ -43893,7 +43893,7 @@ Team {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-1 loops, best of 3: 4.9 s per loop
+1 loops, best of 3: 3.9 s per loop
 
 </pre>
 </div>
@@ -43924,7 +43924,7 @@ Team {
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-1 loops, best of 3: 2.24 s per loop
+1 loops, best of 3: 2.15 s per loop
 
 </pre>
 </div>
@@ -43945,7 +43945,7 @@ Team {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="k">def</span> <span class="nf">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">,</span> <span class="n">load</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
@@ -43982,7 +43982,7 @@ Team {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &gt; 0&#39;</span><span class="p">)</span>
@@ -44066,7 +44066,7 @@ Team {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &lt; 3&#39;</span><span class="p">)</span>
@@ -44123,7 +44123,7 @@ Team {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">players</span> <span class="o">=</span> <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="s">&#39;team_wins &gt; 0 and player_goals &gt; 10&#39;</span><span class="p">)</span>
@@ -44160,6 +44160,68 @@ Team {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">timeit</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">SelectPlayers</span><span class="p">(</span><span class="n">conn</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+1 loops, best of 3: 2.58 s per loop
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span><span class="k">timeit</span> <span class="o">-</span><span class="n">n</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">SelectTeams</span><span class="p">(</span><span class="n">conn</span><span class="o">=</span><span class="n">conn</span><span class="p">,</span> <span class="n">load</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+1 loops, best of 3: 2.42 s per loop
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -44171,7 +44233,7 @@ Team {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class="highlight"><pre><span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
