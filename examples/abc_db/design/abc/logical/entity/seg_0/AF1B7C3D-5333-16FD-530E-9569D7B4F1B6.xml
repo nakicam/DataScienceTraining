@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AF1B7C3D-5333-16FD-530E-9569D7B4F1B6" name="players">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:07:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="B37FD594-3EA1-858B-6FEB-A7FE69294F12">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:07:18 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+</Attribute>
+<Attribute name="name" id="8244E0AF-F145-A187-11C9-CB369473EE68">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:07:44 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="goals12" id="6B36BC60-E94E-A2B9-98FF-626B17FCD3C3">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:29:54 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="starts" id="E8074FBC-1720-7A93-0E83-56887CEFABEF">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:30:10 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="teams id" id="C300D999-5348-3C37-AE8F-ABC100260BE0">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:11:11 UTC</createdTime>
+<generatorID>696B3F6C-70DA-9680-8230-E0C07C8726BA</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<referedAttribute>81CCA9AF-A834-7677-1D26-EE76D974862C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+</Attribute>
+<Attribute name="array data id" id="602E1644-8195-2BA0-EE08-7AF77241BC6A">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:16:50 UTC</createdTime>
+<generatorID>5DE7BE2F-A3DB-B883-19E9-255DE2F79B83</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="array data id1" id="1D67A753-AAE7-3646-1448-2C2A045B154B">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:17:15 UTC</createdTime>
+<generatorID>929B269D-870F-07DF-D504-48FE71D8F251</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="array data id2" id="028079F9-62B9-AF7C-8784-768CFAC818DB">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:17:26 UTC</createdTime>
+<generatorID>6D4E8DEF-2427-A972-C8BF-E6A675ADAC8B</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="goals1" id="8AF65B59-B024-E32C-8D12-54FAA6CEE785">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-28 22:20:37 UTC</createdTime>
+<generatorID>9E2B724D-85F4-902C-849D-E5E5916792DA</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="15B22B92-059F-FD40-FE41-74A5C6E923D6" name="players PK">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:07:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B37FD594-3EA1-858B-6FEB-A7FE69294F12</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B7EC5B1C-BC9E-6133-7295-5D5D948BA0D3" name="players  UN">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-23 04:33:55 UTC</createdTime>
+<generatorID>302FB37D-5E7B-94A6-7A09-60801673A8A7</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8244E0AF-F145-A187-11C9-CB369473EE68</attributeRef>
+<attributeRef>C300D999-5348-3C37-AE8F-ABC100260BE0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

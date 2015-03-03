@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C4794500-EE87-2E83-9252-A55BEC927A0A" name="teams">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:05:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="81CCA9AF-A834-7677-1D26-EE76D974862C">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:05:41 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+</Attribute>
+<Attribute name="name" id="8A98B49F-F879-D9DC-D218-92193FFC41F7">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:06:13 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="array data id" id="3F5C3BE7-364B-EB56-176D-9BCF083D4D88">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:13:15 UTC</createdTime>
+<generatorID>ECE27537-AFDC-0E6A-8BF8-E9E9FEE9DB90</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Attribute>
+<Attribute name="wins" id="452E0D3A-394A-7988-1DED-69107698AE75">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:34:17 UTC</createdTime>
+<generatorID>2AC24BE2-7EA1-199B-7273-69D3B8EE9FF5</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="loses" id="31614B7E-38CD-ECF9-8DA8-33098CFC2A1C">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:34:17 UTC</createdTime>
+<generatorID>2AF363AE-FA60-83D1-FC70-CD966F288598</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="155BC780-E717-3F65-A2E1-45B67B6776BF" name="teams PK">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-22 03:06:01 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81CCA9AF-A834-7677-1D26-EE76D974862C</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0AAD9F9C-C35A-FC00-1BD8-B816C2FB8407" name="teams  UN">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-23 04:33:55 UTC</createdTime>
+<generatorID>AC57BD68-CEDA-8410-5614-A2D6C874508A</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>8A98B49F-F879-D9DC-D218-92193FFC41F7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

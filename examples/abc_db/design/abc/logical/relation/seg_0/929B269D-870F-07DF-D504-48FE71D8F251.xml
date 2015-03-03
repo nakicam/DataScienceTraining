@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="players array data FKv1" directorySegmentName="seg_0" id="929B269D-870F-07DF-D504-48FE71D8F251">
+<createdBy>rwk7t</createdBy>
+<createdTime>2015-02-26 21:17:15 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+</engineerTo>
+<sourcePk>8C5D8A79-0F2A-92EB-8D9B-33C1ADE3B2D6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>588C1DEF-9CEB-F7E1-3E25-DAA664E584B5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>AF1B7C3D-5333-16FD-530E-9569D7B4F1B6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
