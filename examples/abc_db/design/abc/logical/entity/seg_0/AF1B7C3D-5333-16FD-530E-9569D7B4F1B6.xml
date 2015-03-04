@@ -4,7 +4,7 @@
 <createdTime>2015-02-22 03:07:05 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -20,102 +20,40 @@
 <createdTime>2015-02-22 03:07:18 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
+<domain>87C6472F-FA60-9B01-717D-8715AD18BDF6</domain>
 </Attribute>
 <Attribute name="name" id="8244E0AF-F145-A187-11C9-CB369473EE68">
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-22 03:07:44 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
-</Attribute>
-<Attribute name="goals12" id="6B36BC60-E94E-A2B9-98FF-626B17FCD3C3">
-<createdBy>rwk7t</createdBy>
-<createdTime>2015-02-26 21:29:54 UTC</createdTime>
-<ownerDesignName>abc</ownerDesignName>
-<engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>F7881008-B7B1-7432-978D-633C2EB5F431</domain>
 </Attribute>
 <Attribute name="starts" id="E8074FBC-1720-7A93-0E83-56887CEFABEF">
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-26 21:30:10 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="teams id" id="C300D999-5348-3C37-AE8F-ABC100260BE0">
-<createdBy>rwk7t</createdBy>
-<createdTime>2015-02-22 03:11:11 UTC</createdTime>
-<generatorID>696B3F6C-70DA-9680-8230-E0C07C8726BA</generatorID>
-<ownerDesignName>abc</ownerDesignName>
-<engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
-</engineerTo>
-<referedAttribute>81CCA9AF-A834-7677-1D26-EE76D974862C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-</Attribute>
-<Attribute name="array data id" id="602E1644-8195-2BA0-EE08-7AF77241BC6A">
-<createdBy>rwk7t</createdBy>
-<createdTime>2015-02-26 21:16:50 UTC</createdTime>
-<generatorID>5DE7BE2F-A3DB-B883-19E9-255DE2F79B83</generatorID>
-<ownerDesignName>abc</ownerDesignName>
-<engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
-</engineerTo>
-<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-</Attribute>
-<Attribute name="array data id1" id="1D67A753-AAE7-3646-1448-2C2A045B154B">
-<createdBy>rwk7t</createdBy>
-<createdTime>2015-02-26 21:17:15 UTC</createdTime>
-<generatorID>929B269D-870F-07DF-D504-48FE71D8F251</generatorID>
-<ownerDesignName>abc</ownerDesignName>
-<engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
-</engineerTo>
-<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-</Attribute>
-<Attribute name="array data id2" id="028079F9-62B9-AF7C-8784-768CFAC818DB">
-<createdBy>rwk7t</createdBy>
-<createdTime>2015-02-26 21:17:26 UTC</createdTime>
-<generatorID>6D4E8DEF-2427-A972-C8BF-E6A675ADAC8B</generatorID>
-<ownerDesignName>abc</ownerDesignName>
-<engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
-</engineerTo>
-<referedAttribute>98AE9795-8068-B0D5-4093-13A89A1DADD5</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
 </Attribute>
 <Attribute name="goals1" id="8AF65B59-B024-E32C-8D12-54FAA6CEE785">
 <createdBy>rwk7t</createdBy>
@@ -123,22 +61,509 @@
 <generatorID>9E2B724D-85F4-902C-849D-E5E5916792DA</generatorID>
 <ownerDesignName>abc</ownerDesignName>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
+</Attribute>
+<Attribute name="image1" id="3B1187EE-E995-2BC5-3C55-F831915D24DD">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:24 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>AC6F6638-38DD-852B-EB4C-4DBC599B5ED2</structuredType>
+</Attribute>
+<Attribute name="image2" id="22877266-3007-B149-7D79-4F1910500AF0">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>AC6F6638-38DD-852B-EB4C-4DBC599B5ED2</structuredType>
+</Attribute>
+<Attribute name="image3" id="B29A5BBC-4FB5-5505-E550-646B06312504">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>AC6F6638-38DD-852B-EB4C-4DBC599B5ED2</structuredType>
+</Attribute>
+<Attribute name="id1" id="AA016A2E-E832-1D38-DFCA-31B93480076B">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:29:30 UTC</createdTime>
+<generatorID>B191EA15-460A-945A-8CD5-D615203177C4</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<referedAttribute>81CCA9AF-A834-7677-1D26-EE76D974862C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<domain>87C6472F-FA60-9B01-717D-8715AD18BDF6</domain>
 </Attribute>
 </attributes>
+<nestedAttributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<nestedAttribute name="image1.avg" directorySegmentName="seg_0" id="701C548E-6F22-569B-EE04-96A1FC1E077F">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.std" directorySegmentName="seg_0" id="3B36C10B-A5E5-5A63-1B5E-05347ACEC993">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.ndim" directorySegmentName="seg_0" id="33D8AE01-6EDA-1C41-634D-2A98CAF196DF">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.dim1" directorySegmentName="seg_0" id="AFCBD37A-C32E-8B00-D4AF-B4C9CCB196E2">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.dim2" directorySegmentName="seg_0" id="EE62F06B-06C7-7A96-5789-B59A42A76319">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.dim3" directorySegmentName="seg_0" id="49464CAF-024D-3E5F-24A0-72E9FC147280">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.dim4" directorySegmentName="seg_0" id="B536EA79-F108-B160-D9A5-12F76A8FFBE6">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image1.dtype" directorySegmentName="seg_0" id="C7D186A2-DEF4-B3EB-D99D-94B1585F3641">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+</nestedAttribute>
+<nestedAttribute name="image1.value" directorySegmentName="seg_0" id="414C5DEE-28AD-EE02-5EFD-0CAC1C994E83">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:32 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
+<structAttributeID>1B6E9A9E-F731-F09B-1721-C4975CDAE473</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.avg" directorySegmentName="seg_0" id="D4D3F983-ABC8-159D-09E3-497B0084EA5F">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.std" directorySegmentName="seg_0" id="BBED5954-E228-2C50-94E7-8DCDC06BC6EE">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.ndim" directorySegmentName="seg_0" id="85A8702A-7A3E-CE82-EE58-BD6927EAC7D8">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.dim1" directorySegmentName="seg_0" id="CD666CC9-A1FC-07C9-9927-3CEA932E0E00">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.dim2" directorySegmentName="seg_0" id="DE284935-D31D-47E8-7758-40FC13899A19">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.dim3" directorySegmentName="seg_0" id="8EE049D7-DA8F-5B9F-F9F1-68AAE9DCAB9C">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.dim4" directorySegmentName="seg_0" id="324AC4C7-7791-817C-F00A-0A3E744AF014">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image2.dtype" directorySegmentName="seg_0" id="0AF4BE0F-395B-4E5C-2E86-E9F682E08430">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+</nestedAttribute>
+<nestedAttribute name="image2.value" directorySegmentName="seg_0" id="67AE5C76-D7D3-66F5-D765-6AE07F0452DA">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
+<structAttributeID>1B6E9A9E-F731-F09B-1721-C4975CDAE473</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.avg" directorySegmentName="seg_0" id="0705CCDD-7FC0-9243-2304-345FAE8754E8">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.std" directorySegmentName="seg_0" id="6E441280-8AF4-FA9B-4961-CA629CAA97EC">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.ndim" directorySegmentName="seg_0" id="43C285DE-E3A4-C3DF-F14A-5413D95744A0">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.dim1" directorySegmentName="seg_0" id="EA2D495D-D7CA-31F9-9DD5-0D8FA96A949C">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.dim2" directorySegmentName="seg_0" id="01E5B29B-6D9C-9190-49E8-C07F66422EF6">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.dim3" directorySegmentName="seg_0" id="FD79011F-6675-4E62-094D-A86F53193D59">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.dim4" directorySegmentName="seg_0" id="AD60FB30-0EE0-6F86-7397-E38C012AE0C0">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+<nestedAttribute name="image3.dtype" directorySegmentName="seg_0" id="AB8ADDEA-E525-B0DD-11C9-22BB61F8CCCA">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+</nestedAttribute>
+<nestedAttribute name="image3.value" directorySegmentName="seg_0" id="4B50CBF1-F0BB-C7DC-2017-EA6DB3575F2F">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:28:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<engineerTo>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
+<structAttributeID>1B6E9A9E-F731-F09B-1721-C4975CDAE473</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</nestedAttribute>
+</nestedAttributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="15B22B92-059F-FD40-FE41-74A5C6E923D6" name="players PK">
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-22 03:07:32 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -150,13 +575,11 @@
 <createdTime>2015-02-23 04:33:55 UTC</createdTime>
 <generatorID>302FB37D-5E7B-94A6-7A09-60801673A8A7</generatorID>
 <ownerDesignName>abc</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="399D8FFF-8184-9FA7-1130-09260E85AB8F" value="false"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
 </engineerTo>
 <usedAttributes>
 <attributeRef>8244E0AF-F145-A187-11C9-CB369473EE68</attributeRef>
-<attributeRef>C300D999-5348-3C37-AE8F-ABC100260BE0</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
