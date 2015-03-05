@@ -1,0 +1,233 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4DEACDC8-66AD-2E2F-6520-A057212299AD" name="teams">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>C4794500-EE87-2E83-9252-A55BEC927A0A</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="A727F900-C625-EC56-B7C3-70D470BC53B4">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>81CCA9AF-A834-7677-1D26-EE76D974862C</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<domain>87C6472F-FA60-9B01-717D-8715AD18BDF6</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="926549EB-C3A4-9118-A8E5-02F7215EA9EC">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>8A98B49F-F879-D9DC-D218-92193FFC41F7</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<domain>F7881008-B7B1-7432-978D-633C2EB5F431</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wins" id="A31CBA66-32F2-07EB-AA76-6C53A7A43D6D">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>452E0D3A-394A-7988-1DED-69107698AE75</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="loses" id="5BC1D859-9AC9-1D55-BAB8-A8D47092B681">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>31614B7E-38CD-ECF9-8DA8-33098CFC2A1C</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pic1" id="33CE2256-9E2D-CD67-204F-637B8FDEB376">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>BFD93BD3-2E34-7958-01E1-6D09DB736368</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>3</use>
+<structuredType>AC6F6638-38DD-852B-EB4C-4DBC599B5ED2</structuredType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<nestedColumns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<nestedColumn name="pic1.avg" id="D1121F4B-B073-033C-D068-68713942B548">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>A36DF009-F73C-4021-4190-FEED74E01415</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.std" id="EC83D49D-2BB5-1D22-9B31-DE1D17978779">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>93752471-2690-7CE5-EA27-6DA9E740B99A</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.ndim" id="F59B8C13-AF37-642C-0034-96D5002D7FB1">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>E301C736-7918-C1D3-3B60-8F4DE1DDC96E</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.dim1" id="724CBB84-E4EA-CCF8-8406-5F8CB7B7C83B">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>5144783C-D99B-B013-576F-591026E20F47</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.dim2" id="DB840052-9948-CDC5-C485-52FC778D79D6">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>ED2072C3-2DC8-DF53-8C09-29C22463AD2F</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.dim3" id="742BE247-410F-92C2-60E2-0CD9BE5BF034">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>74D29F85-12D5-582F-D0CE-64749C2191A1</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.dim4" id="10147D72-5D15-63FB-E28B-1B8E1F1CC414">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>DE5E25D7-D449-ED14-5BAD-3FBF74390029</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.dtype" id="D5568757-69BB-0252-5243-21C6DDB27D39">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>65D8BC37-3096-D3D6-D6F4-F6D38EEB0A67</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+<nestedColumn name="pic1.value" id="57B0E7CA-7E38-30BD-E8A7-651123CD7C7E">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>DB2D8198-E690-6EFE-87EF-9A4F6A3AE7F6</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
+<structAttributeID>1B6E9A9E-F731-F09B-1721-C4975CDAE473</structAttributeID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</nestedColumn>
+</nestedColumns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15F902B5-E8B1-E7B2-F1FE-25ECAB5A1085" name="teams_PK">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>155BC780-E717-3F65-A2E1-45B67B6776BF</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A727F900-C625-EC56-B7C3-70D470BC53B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05741D7C-F047-6BA5-4A9C-1CC2FB01E37C" name="teams__UN">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:30:38 UTC</createdTime>
+<generatorID>0AAD9F9C-C35A-FC00-1BD8-B816C2FB8407</generatorID>
+<ownerDesignName>abc</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="926549EB-C3A4-9118-A8E5-02F7215EA9EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

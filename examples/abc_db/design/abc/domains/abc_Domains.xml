@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="abc_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="11B983D0-A7B0-267D-2137-AC3DE4A115BF">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="DOUBLE_0_0_0" id="51E375CA-37AD-27DC-F9D9-E8DBE106E682">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT020</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="675F0C0E-294E-825A-C93B-E20E8649CC16">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_7_0_0" id="87C6472F-FA60-9B01-717D-8715AD18BDF6">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>7</dataTypePrecision>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="BLOB_0_0_0" id="9DA66464-C0A9-7466-AF34-F09B43C66322">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT029</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="F7881008-B7B1-7432-978D-633C2EB5F431">
+         <createdBy>J28976</createdBy>
+         <createdTime>2015-03-04 22:04:26 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>10</dataTypeSize>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>
