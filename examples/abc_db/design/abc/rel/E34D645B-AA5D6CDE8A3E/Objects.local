@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="Table" objectID="E411C771-F742-1B26-8659-BD3ABA711FF0" name="players" seqName="seg_0"/>
    <object objectType="Table" objectID="4DEACDC8-66AD-2E2F-6520-A057212299AD" name="teams" seqName="seg_0"/>
+   <object objectType="Table" objectID="E411C771-F742-1B26-8659-BD3ABA711FF0" name="players" seqName="seg_0"/>
    <object objectType="View" objectID="39E355EC-59FC-E175-59F4-F67536C2261A" name="v_players" seqName="seg_0"/>
    <object objectType="View" objectID="990B0A34-15EA-FAF9-F54E-AEA71E26FD8D" name="v_teams" seqName="seg_0"/>
    <object objectType="FKIndexAssociation" objectID="F929F699-9E78-0DB4-D1C0-CCBD88BF1421" name="players_teams_FK" seqName="seg_0"/>

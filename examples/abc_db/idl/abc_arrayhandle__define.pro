@@ -21,7 +21,7 @@ pro abc_ArrayHandle__define
         , conn : obj_new('IDLdbDatabase')$
         , array_id : -9999L              $
         , value : obj_new()              $
-        }
+    }
     return
 end
 

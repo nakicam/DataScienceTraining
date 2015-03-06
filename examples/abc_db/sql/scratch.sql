@@ -53,3 +53,45 @@ select
     , d.value
 from array_data d where d.id=1
 ;
+
+
+SELECT p.id AS players_id,
+  p.name,
+  p.image3.dim4,
+  p.image3.dtype
+FROM players p;
+
+SELECT player.id AS player_id,
+  player.name,
+  player.starts,
+  player.goals,
+  player.teams_id,
+  player.image1.avg,
+  player.image1.std,
+  player.image1.ndim,
+  player.image1.dim1,
+  player.image1.dim2,
+  player.image1.dim3,
+  player.image1.dim4,
+  player.image1.dtype,
+  player.image2.avg,
+  player.image2.std,
+  player.image2.ndim,
+  player.image2.dim1,
+  player.image2.dim2,
+  player.image2.dim3,
+  player.image2.dim4,
+  player.image2.dtype,
+  player.image3.avg,
+  player.image3.std,
+  player.image3.ndim,
+  player.image3.dim1,
+  player.image3.dim2,
+  player.image3.dim3,
+  player.image3.dim4,
+  player.image3.dtype
+FROM players player;
+
+select players.image3 from players;
+
+SELECT t.pic1.avg FROM teams t;
