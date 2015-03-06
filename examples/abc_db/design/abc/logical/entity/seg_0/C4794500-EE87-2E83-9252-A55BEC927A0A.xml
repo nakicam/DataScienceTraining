@@ -234,8 +234,9 @@
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-22 03:06:01 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -247,8 +248,9 @@
 <createdTime>2015-02-23 04:33:55 UTC</createdTime>
 <generatorID>AC57BD68-CEDA-8410-5614-A2D6C874508A</generatorID>
 <ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="false"/>
 </engineerTo>
 <usedAttributes>
 <attributeRef>8A98B49F-F879-D9DC-D218-92193FFC41F7</attributeRef>

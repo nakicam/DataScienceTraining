@@ -17,6 +17,8 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
 <domain>87C6472F-FA60-9B01-717D-8715AD18BDF6</domain>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="name" id="62967F07-3F8A-2206-03C4-2BFD424BB36D">
@@ -44,7 +46,7 @@
 <domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="goals1" id="BC30126C-AD14-0873-870B-B79885A76DC0">
+<Column name="goals" id="BC30126C-AD14-0873-870B-B79885A76DC0">
 <createdBy>J28976</createdBy>
 <createdTime>2015-03-04 22:30:38 UTC</createdTime>
 <generatorID>8AF65B59-B024-E32C-8D12-54FAA6CEE785</generatorID>

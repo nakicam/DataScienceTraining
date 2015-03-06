@@ -55,7 +55,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
 </Attribute>
-<Attribute name="goals1" id="8AF65B59-B024-E32C-8D12-54FAA6CEE785">
+<Attribute name="goals" id="8AF65B59-B024-E32C-8D12-54FAA6CEE785">
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-28 22:20:37 UTC</createdTime>
 <generatorID>9E2B724D-85F4-902C-849D-E5E5916792DA</generatorID>
@@ -562,8 +562,9 @@
 <createdBy>rwk7t</createdBy>
 <createdTime>2015-02-22 03:07:32 UTC</createdTime>
 <ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
@@ -575,8 +576,9 @@
 <createdTime>2015-02-23 04:33:55 UTC</createdTime>
 <generatorID>302FB37D-5E7B-94A6-7A09-60801673A8A7</generatorID>
 <ownerDesignName>abc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="true"/>
+<item key="E34D645B-BBD8-E20E-F4C5-AA5D6CDE8A3E" value="false"/>
 </engineerTo>
 <usedAttributes>
 <attributeRef>8244E0AF-F145-A187-11C9-CB369473EE68</attributeRef>
