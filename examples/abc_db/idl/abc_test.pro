@@ -20,7 +20,6 @@ pro abc_test_blob
     db = obj_new('IDLdbDatabase')
     db->Connect, DATASOURCE='ABC', USER_ID='abc', PASSWORD='abc'
 
-    tic
     sql =   'select'+$
             '    t.pic1.ndim  as ndim'+$
             '  , t.pic1.dim1  as dim1'+$
@@ -50,7 +49,6 @@ pro abc_test_blob
     xsize = dim2
     ysize = dim1
     blob_image = fix(*blob_ptr, 0, rgb, xsize, ysize, type=1)
-    toc
 
     ; plot it
     help, blob_image

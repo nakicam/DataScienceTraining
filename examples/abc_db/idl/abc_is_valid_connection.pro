@@ -11,9 +11,7 @@ function abc_is_valid_connection, db_obj
     compile_opt idl2
 
     ; check arguments 
-	if (n_elements(db_obj) eq 0L) then begin
-		message, '[abc_isvalid_db_object] db_obj parameter undefined'
-	endif
+	if (n_params() ne 1) then message, '[error] db_obj parameter undefined'
 
     ; test if the object is valid
     if (~obj_valid(db_obj)) then return, 0B

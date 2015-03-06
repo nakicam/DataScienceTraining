@@ -1,4 +1,4 @@
-function abc_get_datatype, dtype
+function abc_get_idl_dtype, dtype
     compile_opt idl2
 
     ; check arguments
@@ -34,13 +34,13 @@ function abc_get_datatype, dtype
 end
 
 ; test 
-function abc_test_get_datatype
+function abc_get_idl_dtype_test
     compile_opt idl2
     
 ;    catch, error
 ;    if (error ne 0) then begin
 ;        catch, /cancel
-;        ;print, 'ABC_GET_DATATYPE_TEST [error] : ', !error_state.msg
+;        ;print, 'ABC_GET_IDL_DTYPE_TEST [error] : ', !error_state.msg
 ;        return, result
 ;    endif
        
@@ -63,7 +63,7 @@ function abc_test_get_datatype
         
     result = 1B
     foreach dtype, dtypes do begin
-        result = result and (abc_get_datatype(dtype.name) eq dtype.value)
+        result = result and (abc_get_idl_dtype(dtype.name) eq dtype.value)
     endforeach
     
     return, result
