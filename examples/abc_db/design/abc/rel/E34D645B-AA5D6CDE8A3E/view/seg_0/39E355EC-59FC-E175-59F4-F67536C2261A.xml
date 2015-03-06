@@ -1,0 +1,395 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="39E355EC-59FC-E175-59F4-F67536C2261A" name="v_players">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:15:21 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>SELECT player.id AS player_id,&lt;br/&gt;  player.name player_name,&lt;br/&gt;  player.starts player_starts,&lt;br/&gt;  player.goals player_goals,&lt;br/&gt;  player.teams_id player_teams_id,&lt;br/&gt;  player.image1.avg player_image1_avg,&lt;br/&gt;  player.image1.std player_image1_std,&lt;br/&gt;  player.image1.ndim player_image1_ndim,&lt;br/&gt;  player.image1.dim1 player_image1_dim1,&lt;br/&gt;  player.image1.dim2 player_image1_dim2,&lt;br/&gt;  player.image1.dim3 player_image1_dim3,&lt;br/&gt;  player.image1.dim4 player_image1_dim4,&lt;br/&gt;  player.image1.dtype player_image1_dtype,&lt;br/&gt;  player.image2.avg player_image2_avg,&lt;br/&gt;  player.image2.std player_image2_std,&lt;br/&gt;  player.image2.ndim player_image2_ndim,&lt;br/&gt;  player.image2.dim1 player_image2_dim1,&lt;br/&gt;  player.image2.dim2 player_image2_dim2,&lt;br/&gt;  player.image2.dim3 player_image2_dim3,&lt;br/&gt;  player.image2.dim4 player_image2_dim4,&lt;br/&gt;  player.image2.dtype player_image2_dtype,&lt;br/&gt;  player.image3.avg player_image3_avg,&lt;br/&gt;  player.image3.std player_image3_std,&lt;br/&gt;  player.image3.ndim player_image3_ndim,&lt;br/&gt;  player.image3.dim1 player_image3_dim1,&lt;br/&gt;  player.image3.dim2 player_image3_dim2,&lt;br/&gt;  player.image3.dim3 player_image3_dim3,&lt;br/&gt;  player.image3.dim4 player_image3_dim4,&lt;br/&gt;  player.image3.dtype player_image3_dtype&lt;br/&gt;FROM players player</userDefinedSQL>
+<layoutSQL>&lt;?xml version = &apos;1.0&apos; encoding = &apos;UTF-8&apos;?&gt;&lt;br&gt;&lt;ActiveQueryBuilderLayout&gt;&lt;SQL&gt;Select player.id As player_id, player.name player_name, player.starts player_starts, player.goals player_goals, player.teams_id player_teams_id, player.image1.avg player_image1_avg, player.image1.std player_image1_std, player.image1.ndim player_image1_ndim, player.image1.dim1 player_image1_dim1, player.image1.dim2 player_image1_dim2, player.image1.dim3 player_image1_dim3, player.image1.dim4 player_image1_dim4, player.image1.dtype player_image1_dtype, player.image2.avg player_image2_avg, player.image2.std player_image2_std, player.image2.ndim player_image2_ndim, player.image2.dim1 player_image2_dim1, player.image2.dim2 player_image2_dim2, player.image2.dim3 player_image2_dim3, player.image2.dim4 player_image2_dim4, player.image2.dtype player_image2_dtype, player.image3.avg player_image3_avg, player.image3.std player_image3_std, player.image3.ndim player_image3_ndim, player.image3.dim1 player_image3_dim1, player.image3.dim2 player_image3_dim2, player.image3.dim3 player_image3_dim3, player.image3.dim4 player_image3_dim4, player.image3.dtype player_image3_dtype From players player&lt;/SQL&gt;&lt;SubQueries&gt;&lt;SubQuery SQL=&quot;Select player.id As player_id, player.name player_name, player.starts player_starts, player.goals player_goals, player.teams_id player_teams_id, player.image1.avg player_image1_avg, player.image1.std player_image1_std, player.image1.ndim player_image1_ndim, player.image1.dim1 player_image1_dim1, player.image1.dim2 player_image1_dim2, player.image1.dim3 player_image1_dim3, player.image1.dim4 player_image1_dim4, player.image1.dtype player_image1_dtype, player.image2.avg player_image2_avg, player.image2.std player_image2_std, player.image2.ndim player_image2_ndim, player.image2.dim1 player_image2_dim1, player.image2.dim2 player_image2_dim2, player.image2.dim3 player_image2_dim3, player.image2.dim4 player_image2_dim4, player.image2.dtype player_image2_dtype, player.image3.avg player_image3_avg, player.image3.std player_image3_std, player.image3.ndim player_image3_ndim, player.image3.dim1 player_image3_dim1, player.image3.dim2 player_image3_dim2, player.image3.dim3 player_image3_dim3, player.image3.dim4 player_image3_dim4, player.image3.dtype player_image3_dtype From players player&quot;&gt;&lt;UnionSubQuery&gt;&lt;DataSource SQL=&quot;players player&quot; X=&quot;50&quot; Y=&quot;20&quot; Height=&quot;675&quot; Width=&quot;140&quot;/&gt;&lt;/UnionSubQuery&gt;&lt;/SubQuery&gt;&lt;/SubQueries&gt;&lt;/ActiveQueryBuilderLayout&gt;</layoutSQL>
+<parsed>true</parsed>
+<usedContainers>
+<container alias="player" containerID="E411C771-F742-1B26-8659-BD3ABA711FF0"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_id" id="FF99CA5E-491F-0173-E61F-7EAA06531064">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_id</alias>
+<dataType>NUMBER (7)</dataType>
+<headerAlias>player_id</headerAlias>
+<expression>id</expression>
+<reference>false</reference>
+<referencedColumn>F44D7238-C68B-E956-0037-6F2579B55767</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_name" id="A2F0820D-EE62-14E2-B2D6-DAF046F8E059">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_name</alias>
+<dataType>VARCHAR2 (10)</dataType>
+<headerAlias>player_name</headerAlias>
+<expression>name</expression>
+<reference>false</reference>
+<referencedColumn>62967F07-3F8A-2206-03C4-2BFD424BB36D</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_starts" id="8B5CB526-A44C-EEB6-4FD8-07F65034FFC1">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_starts</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_starts</headerAlias>
+<expression>starts</expression>
+<reference>false</reference>
+<referencedColumn>AB318E18-888C-735D-8F35-BAEAE0382166</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_goals" id="6DD580C1-B068-3EAA-E63E-7AD5C23ABC7A">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_goals</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_goals</headerAlias>
+<expression>goals</expression>
+<reference>false</reference>
+<referencedColumn>BC30126C-AD14-0873-870B-B79885A76DC0</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_teams_id" id="5A70166C-CD14-68B2-69D4-EF7B7775DFFF">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_teams_id</alias>
+<dataType>NUMBER (7)</dataType>
+<headerAlias>player_teams_id</headerAlias>
+<expression>teams_id</expression>
+<reference>false</reference>
+<referencedColumn>E1A5F400-0CE4-ED0B-EEDE-5DE9E57AA714</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_avg" id="2E9E8E16-AE1E-E014-B24B-1E02AE406DFC">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_avg</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image1_avg</headerAlias>
+<expression>avg</expression>
+<reference>false</reference>
+<referencedColumn>78F5827D-2293-BCD1-A852-FCD30935C457</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_std" id="EF5C1FCC-1F5C-33B4-F3A6-2D3EF08C12C5">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_std</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image1_std</headerAlias>
+<expression>std</expression>
+<reference>false</reference>
+<referencedColumn>B96751D3-2A09-CCF8-9EFB-7386F0CFEBE7</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_ndim" id="2A0D1FCA-35FC-66F7-ACB5-554E93F7323D">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_ndim</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image1_ndim</headerAlias>
+<expression>ndim</expression>
+<reference>false</reference>
+<referencedColumn>4A772CBF-07CD-7021-91EB-4913F7718EB4</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_dim1" id="F93AE9B9-A487-AEBD-95D3-9534F80D18CC">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_dim1</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image1_dim1</headerAlias>
+<expression>dim1</expression>
+<reference>false</reference>
+<referencedColumn>60402B90-BD16-FBD1-A6C6-440B6291F6D4</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_dim2" id="98302917-570B-FDCD-C228-59A3AD525E42">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_dim2</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image1_dim2</headerAlias>
+<expression>dim2</expression>
+<reference>false</reference>
+<referencedColumn>F836D2FD-3A27-D6C2-3EB6-796923BD61DF</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_dim3" id="3271C831-AD06-6B6E-FF1B-DD68A20CF530">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_dim3</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image1_dim3</headerAlias>
+<expression>dim3</expression>
+<reference>false</reference>
+<referencedColumn>D701EC4B-F2F0-8562-A04A-CF703C67EBD4</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_dim4" id="1ABDB071-0FF3-C0E5-A190-A0BC74B39BCF">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_dim4</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image1_dim4</headerAlias>
+<expression>dim4</expression>
+<reference>false</reference>
+<referencedColumn>B1416C02-7505-620A-7A19-CD805918AB30</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image1_dtype" id="3B577013-FCFA-D2E5-3BCF-183FFAD4E7A9">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image1_dtype</alias>
+<dataType>VARCHAR2 (20)</dataType>
+<headerAlias>player_image1_dtype</headerAlias>
+<expression>dtype</expression>
+<reference>false</reference>
+<referencedColumn>DDC8E161-E05C-F9A3-DDE9-F38F4585FC4F</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_avg" id="5615DC75-8755-7601-67EE-5628635D41C2">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_avg</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image2_avg</headerAlias>
+<expression>avg</expression>
+<reference>false</reference>
+<referencedColumn>671EF1DD-197E-C2E3-42E2-C91BB08341AF</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_std" id="4032F098-B0F4-BDD7-CF35-1399CCAEFB99">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_std</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image2_std</headerAlias>
+<expression>std</expression>
+<reference>false</reference>
+<referencedColumn>70E78B24-9BA4-2AA0-624F-5DF1BA82ADD0</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_ndim" id="3F3957C0-D812-BD5A-9325-FE4ADBB15CFE">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_ndim</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image2_ndim</headerAlias>
+<expression>ndim</expression>
+<reference>false</reference>
+<referencedColumn>83C5142C-FF51-33F7-A94B-78C9B8EF3583</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_dim1" id="6383CF92-20FF-5400-92F3-746767F66637">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_dim1</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image2_dim1</headerAlias>
+<expression>dim1</expression>
+<reference>false</reference>
+<referencedColumn>CA9B0291-E381-41C1-D127-7D56106F45D8</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_dim2" id="07B3C003-8534-8617-F198-7C0A306D0B1B">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_dim2</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image2_dim2</headerAlias>
+<expression>dim2</expression>
+<reference>false</reference>
+<referencedColumn>8305AF83-17A6-681C-4310-AA0167CB2590</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_dim3" id="8867150A-45C8-71B7-3724-71120053A5C0">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_dim3</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image2_dim3</headerAlias>
+<expression>dim3</expression>
+<reference>false</reference>
+<referencedColumn>373EDDC7-4116-8EB2-D400-382BE31C7CA2</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_dim4" id="A941F28B-0120-DC1A-F834-0F041555F157">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_dim4</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image2_dim4</headerAlias>
+<expression>dim4</expression>
+<reference>false</reference>
+<referencedColumn>C77A334C-1BD4-2A64-4BF4-EA86D638D64F</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image2_dtype" id="0E638CB6-C9F5-A48D-2008-D03FD9BA8EC9">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image2_dtype</alias>
+<dataType>VARCHAR2 (20)</dataType>
+<headerAlias>player_image2_dtype</headerAlias>
+<expression>dtype</expression>
+<reference>false</reference>
+<referencedColumn>03379AAD-690E-729C-71C9-812D80F08F0D</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_avg" id="E2ED5763-6D71-2719-485C-F757426ABD87">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_avg</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image3_avg</headerAlias>
+<expression>avg</expression>
+<reference>false</reference>
+<referencedColumn>23517CE7-AEFB-E900-AFC4-059E98F3679F</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_std" id="7A53212A-1D06-5AB6-BF9D-52E8910F5AA1">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_std</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>player_image3_std</headerAlias>
+<expression>std</expression>
+<reference>false</reference>
+<referencedColumn>094199B1-E011-5CA5-D0A9-2E315175979D</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_ndim" id="1B6C5777-0091-A3AE-8ABC-3A16542FA833">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_ndim</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image3_ndim</headerAlias>
+<expression>ndim</expression>
+<reference>false</reference>
+<referencedColumn>2DCBED7E-BCFC-D0AB-72F5-52EDC318B87D</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_dim1" id="5E428A94-9693-623A-78DC-5ACED0F3B173">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_dim1</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image3_dim1</headerAlias>
+<expression>dim1</expression>
+<reference>false</reference>
+<referencedColumn>A83DC110-02D9-6996-2284-BE093E17E70B</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_dim2" id="D48DCF8D-45FE-B56A-F794-CB31649FE6B6">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_dim2</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image3_dim2</headerAlias>
+<expression>dim2</expression>
+<reference>false</reference>
+<referencedColumn>00CB0CBA-C577-0386-825C-9035CC276E1E</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_dim3" id="CC5C77AD-A73D-1705-6490-94D30B87E685">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_dim3</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image3_dim3</headerAlias>
+<expression>dim3</expression>
+<reference>false</reference>
+<referencedColumn>88E75F26-36D9-AB23-D6B1-5409892574C8</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_dim4" id="CCFAAC04-38D1-DE6A-1A0D-C8DF527640AF">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:05 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_dim4</alias>
+<dataType>INTEGER</dataType>
+<headerAlias>player_image3_dim4</headerAlias>
+<expression>dim4</expression>
+<reference>false</reference>
+<referencedColumn>21D6703A-F57A-B37C-A4C7-97F1F0E08E75</referencedColumn>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="player_image3_dtype" id="3B096BCC-77B9-3B9D-8397-1328C845BD15">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 23:57:18 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<alias>player_image3_dtype</alias>
+<dataType>VARCHAR2 (20)</dataType>
+<headerAlias>player_image3_dtype</headerAlias>
+<reference>false</reference>
+<referencedColumn>E4AA0EBF-08D2-BC98-5198-4A0729B7F416</referencedColumn>
+<table>E411C771-F742-1B26-8659-BD3ABA711FF0</table>
+<tableAlias>player</tableAlias>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E411C771-F742-1B26-8659-BD3ABA711FF0">
+<container>true</container>
+<tableName>players</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F44D7238-C68B-E956-0037-6F2579B55767">
+<columnName>id</columnName>
+<tableName>players</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="62967F07-3F8A-2206-03C4-2BFD424BB36D">
+<columnName>name</columnName>
+<tableName>players</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AB318E18-888C-735D-8F35-BAEAE0382166">
+<columnName>starts</columnName>
+<tableName>players</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BC30126C-AD14-0873-870B-B79885A76DC0">
+<columnName>goals</columnName>
+<tableName>players</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E1A5F400-0CE4-ED0B-EEDE-5DE9E57AA714">
+<columnName>teams_id</columnName>
+<tableName>players</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>
