@@ -1,17 +1,15 @@
 -- drop existing
 
+drop view v_players;
+drop view v_teams;
 drop table players;
 drop table teams;
-drop table array_data;
 drop sequence players_id_seq;
 drop sequence teams_id_seq;
-drop sequence array_data_id_seq;
 
 -- deploy
 
 @abc.ddl
-@players_view.sql
-@teams_view.sql
 
 -- load data
 

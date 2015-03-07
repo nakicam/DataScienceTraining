@@ -1,11 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
-   <object objectType="Entity" objectID="588C1DEF-9CEB-F7E1-3E25-DAA664E584B5" name="array_data" seqName="seg_0"/>
    <object objectType="Entity" objectID="AF1B7C3D-5333-16FD-530E-9569D7B4F1B6" name="players" seqName="seg_0"/>
    <object objectType="Entity" objectID="C4794500-EE87-2E83-9252-A55BEC927A0A" name="teams" seqName="seg_0"/>
-   <object objectType="Relation" objectID="5DE7BE2F-A3DB-B883-19E9-255DE2F79B83" name="players array data FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="929B269D-870F-07DF-D504-48FE71D8F251" name="players array data FKv1" seqName="seg_0"/>
-   <object objectType="Relation" objectID="6D4E8DEF-2427-A972-C8BF-E6A675ADAC8B" name="players array data FKv2" seqName="seg_0"/>
-   <object objectType="Relation" objectID="696B3F6C-70DA-9680-8230-E0C07C8726BA" name="players teams FK" seqName="seg_0"/>
-   <object objectType="Relation" objectID="ECE27537-AFDC-0E6A-8BF8-E9E9FEE9DB90" name="teams array data FK" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B191EA15-460A-945A-8CD5-D615203177C4" name="Relation_6" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

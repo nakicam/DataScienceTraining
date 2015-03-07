@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="ArrayInfo" directorySegmentName="seg_0" id="AC6F6638-38DD-852B-EB4C-4DBC599B5ED2">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:24:36 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<predefined>false</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+<attributes itemClass="oracle.dbtools.crest.model.design.datatypes.TypeElement">
+<Attribute name="avg" id="05E97693-A48E-671F-B2C5-00220F836A1D">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:24:51 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT020</type>
+</Attribute>
+<Attribute name="std" id="8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:25:21 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT020</type>
+</Attribute>
+<Attribute name="ndim" id="A632C894-B687-5B1B-3139-D5FD57AA21A0">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:25:37 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT011</type>
+</Attribute>
+<Attribute name="dim1" id="281308D0-982E-B3D3-D24D-717660259CEB">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:25:59 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT011</type>
+</Attribute>
+<Attribute name="dim2" id="078BA7E2-7FA1-9C9E-1D55-671A030E55EC">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:26:19 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT011</type>
+</Attribute>
+<Attribute name="dim3" id="63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:26:25 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT011</type>
+</Attribute>
+<Attribute name="dim4" id="B242078E-F7F7-290C-5CC4-FA51DF5D3203">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:26:33 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT011</type>
+</Attribute>
+<Attribute name="dtype" id="FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:26:39 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<size>20</size>
+<type>LOGDT024</type>
+</Attribute>
+<Attribute name="value" id="1B6E9A9E-F731-F09B-1721-C4975CDAE473">
+<createdBy>J28976</createdBy>
+<createdTime>2015-03-04 22:27:00 UTC</createdTime>
+<ownerDesignName>abc</ownerDesignName>
+<mandatory>false</mandatory>
+<precision>0</precision>
+<reference>false</reference>
+<scale>0</scale>
+<type>LOGDT029</type>
+</Attribute>
+</attributes>
+</StructuredType>
