@@ -89,7 +89,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_pic1_ndim</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>F59B8C13-AF37-642C-0034-96D5002D7FB1</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>
@@ -101,7 +101,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_pic1_dim1</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>724CBB84-E4EA-CCF8-8406-5F8CB7B7C83B</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>
@@ -113,7 +113,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_pic1_dim2</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>DB840052-9948-CDC5-C485-52FC778D79D6</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>
@@ -125,7 +125,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_pic1_dim3</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>742BE247-410F-92C2-60E2-0CD9BE5BF034</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>
@@ -137,7 +137,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_pic1_dim4</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>10147D72-5D15-63FB-E28B-1B8E1F1CC414</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>

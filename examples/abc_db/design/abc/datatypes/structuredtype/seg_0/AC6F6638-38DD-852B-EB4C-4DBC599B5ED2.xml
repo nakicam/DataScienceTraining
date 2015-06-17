@@ -35,7 +35,7 @@
 <precision>0</precision>
 <reference>false</reference>
 <scale>0</scale>
-<type>LOGDT011</type>
+<type>LOGDT019</type>
 </Attribute>
 <Attribute name="dim1" id="281308D0-982E-B3D3-D24D-717660259CEB">
 <createdBy>J28976</createdBy>
@@ -45,7 +45,7 @@
 <precision>0</precision>
 <reference>false</reference>
 <scale>0</scale>
-<type>LOGDT011</type>
+<type>LOGDT019</type>
 </Attribute>
 <Attribute name="dim2" id="078BA7E2-7FA1-9C9E-1D55-671A030E55EC">
 <createdBy>J28976</createdBy>
@@ -55,7 +55,7 @@
 <precision>0</precision>
 <reference>false</reference>
 <scale>0</scale>
-<type>LOGDT011</type>
+<type>LOGDT019</type>
 </Attribute>
 <Attribute name="dim3" id="63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A">
 <createdBy>J28976</createdBy>
@@ -65,7 +65,7 @@
 <precision>0</precision>
 <reference>false</reference>
 <scale>0</scale>
-<type>LOGDT011</type>
+<type>LOGDT019</type>
 </Attribute>
 <Attribute name="dim4" id="B242078E-F7F7-290C-5CC4-FA51DF5D3203">
 <createdBy>J28976</createdBy>
@@ -75,7 +75,7 @@
 <precision>0</precision>
 <reference>false</reference>
 <scale>0</scale>
-<type>LOGDT011</type>
+<type>LOGDT019</type>
 </Attribute>
 <Attribute name="dtype" id="FDDA1A28-8E5C-98F9-066A-8CBB25F6B1AA">
 <createdBy>J28976</createdBy>

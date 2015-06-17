@@ -18,7 +18,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="AC6F6638-38DD-852B-EB4C-4DBC599B5ED2" otype="StructuredType" vid="B37EFEA4-3C40-B280-B31A-DC1E71E913BD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="86" y="74" width="208" height="202"/>
+<bounds x="86" y="74" width="176" height="153"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" otype="StructuredType" vid="4FB1EAE1-67B1-01CF-F8BE-5BF51725FFFB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

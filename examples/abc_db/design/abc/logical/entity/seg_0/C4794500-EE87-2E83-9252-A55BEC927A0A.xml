@@ -127,7 +127,7 @@
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 </nestedAttribute>
@@ -143,7 +143,7 @@
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 </nestedAttribute>
@@ -159,7 +159,7 @@
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 </nestedAttribute>
@@ -175,7 +175,7 @@
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 </nestedAttribute>
@@ -191,7 +191,7 @@
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
 <dataTypeScale>0</dataTypeScale>
 </nestedAttribute>
