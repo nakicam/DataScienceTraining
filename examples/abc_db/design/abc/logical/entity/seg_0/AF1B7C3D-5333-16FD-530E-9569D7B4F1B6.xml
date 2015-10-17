@@ -132,10 +132,9 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.std" directorySegmentName="seg_0" id="3B36C10B-A5E5-5A63-1B5E-05347ACEC993">
 <createdBy>J28976</createdBy>
@@ -148,10 +147,9 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.ndim" directorySegmentName="seg_0" id="33D8AE01-6EDA-1C41-634D-2A98CAF196DF">
 <createdBy>J28976</createdBy>
@@ -164,10 +162,11 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.dim1" directorySegmentName="seg_0" id="AFCBD37A-C32E-8B00-D4AF-B4C9CCB196E2">
 <createdBy>J28976</createdBy>
@@ -180,10 +179,11 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.dim2" directorySegmentName="seg_0" id="EE62F06B-06C7-7A96-5789-B59A42A76319">
 <createdBy>J28976</createdBy>
@@ -196,10 +196,11 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.dim3" directorySegmentName="seg_0" id="49464CAF-024D-3E5F-24A0-72E9FC147280">
 <createdBy>J28976</createdBy>
@@ -212,10 +213,11 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.dim4" directorySegmentName="seg_0" id="B536EA79-F108-B160-D9A5-12F76A8FFBE6">
 <createdBy>J28976</createdBy>
@@ -228,10 +230,11 @@
 <parentObject>3B1187EE-E995-2BC5-3C55-F831915D24DD</parentObject>
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image1.dtype" directorySegmentName="seg_0" id="C7D186A2-DEF4-B3EB-D99D-94B1585F3641">
 <createdBy>J28976</createdBy>
@@ -277,10 +280,9 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.std" directorySegmentName="seg_0" id="BBED5954-E228-2C50-94E7-8DCDC06BC6EE">
 <createdBy>J28976</createdBy>
@@ -293,10 +295,9 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.ndim" directorySegmentName="seg_0" id="85A8702A-7A3E-CE82-EE58-BD6927EAC7D8">
 <createdBy>J28976</createdBy>
@@ -309,10 +310,11 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.dim1" directorySegmentName="seg_0" id="CD666CC9-A1FC-07C9-9927-3CEA932E0E00">
 <createdBy>J28976</createdBy>
@@ -325,10 +327,11 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.dim2" directorySegmentName="seg_0" id="DE284935-D31D-47E8-7758-40FC13899A19">
 <createdBy>J28976</createdBy>
@@ -341,10 +344,11 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.dim3" directorySegmentName="seg_0" id="8EE049D7-DA8F-5B9F-F9F1-68AAE9DCAB9C">
 <createdBy>J28976</createdBy>
@@ -357,10 +361,11 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.dim4" directorySegmentName="seg_0" id="324AC4C7-7791-817C-F00A-0A3E744AF014">
 <createdBy>J28976</createdBy>
@@ -373,10 +378,11 @@
 <parentObject>22877266-3007-B149-7D79-4F1910500AF0</parentObject>
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image2.dtype" directorySegmentName="seg_0" id="0AF4BE0F-395B-4E5C-2E86-E9F682E08430">
 <createdBy>J28976</createdBy>
@@ -422,10 +428,9 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.std" directorySegmentName="seg_0" id="6E441280-8AF4-FA9B-4961-CA629CAA97EC">
 <createdBy>J28976</createdBy>
@@ -438,10 +443,9 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.ndim" directorySegmentName="seg_0" id="43C285DE-E3A4-C3DF-F14A-5413D95744A0">
 <createdBy>J28976</createdBy>
@@ -454,10 +458,11 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.dim1" directorySegmentName="seg_0" id="EA2D495D-D7CA-31F9-9DD5-0D8FA96A949C">
 <createdBy>J28976</createdBy>
@@ -470,10 +475,11 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.dim2" directorySegmentName="seg_0" id="01E5B29B-6D9C-9190-49E8-C07F66422EF6">
 <createdBy>J28976</createdBy>
@@ -486,10 +492,11 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.dim3" directorySegmentName="seg_0" id="FD79011F-6675-4E62-094D-A86F53193D59">
 <createdBy>J28976</createdBy>
@@ -502,10 +509,11 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.dim4" directorySegmentName="seg_0" id="AD60FB30-0EE0-6F86-7397-E38C012AE0C0">
 <createdBy>J28976</createdBy>
@@ -518,10 +526,11 @@
 <parentObject>B29A5BBC-4FB5-5505-E550-646B06312504</parentObject>
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="image3.dtype" directorySegmentName="seg_0" id="AB8ADDEA-E525-B0DD-11C9-22BB61F8CCCA">
 <createdBy>J28976</createdBy>

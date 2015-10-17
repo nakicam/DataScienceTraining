@@ -94,10 +94,9 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.std" directorySegmentName="seg_0" id="93752471-2690-7CE5-EA27-6DA9E740B99A">
 <createdBy>J28976</createdBy>
@@ -110,10 +109,9 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.ndim" directorySegmentName="seg_0" id="E301C736-7918-C1D3-3B60-8F4DE1DDC96E">
 <createdBy>J28976</createdBy>
@@ -126,10 +124,11 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.dim1" directorySegmentName="seg_0" id="5144783C-D99B-B013-576F-591026E20F47">
 <createdBy>J28976</createdBy>
@@ -142,10 +141,11 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.dim2" directorySegmentName="seg_0" id="ED2072C3-2DC8-DF53-8C09-29C22463AD2F">
 <createdBy>J28976</createdBy>
@@ -158,10 +158,11 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.dim3" directorySegmentName="seg_0" id="74D29F85-12D5-582F-D0CE-64749C2191A1">
 <createdBy>J28976</createdBy>
@@ -174,10 +175,11 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.dim4" directorySegmentName="seg_0" id="DE5E25D7-D449-ED14-5BAD-3FBF74390029">
 <createdBy>J28976</createdBy>
@@ -190,10 +192,11 @@
 <parentObject>BFD93BD3-2E34-7958-01E1-6D09DB736368</parentObject>
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 </nestedAttribute>
 <nestedAttribute name="pic1.dtype" directorySegmentName="seg_0" id="65D8BC37-3096-D3D6-D6F4-F6D38EEB0A67">
 <createdBy>J28976</createdBy>

@@ -41,7 +41,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_wins</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>A31CBA66-32F2-07EB-AA76-6C53A7A43D6D</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>
@@ -53,7 +53,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>team_loses</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <reference>false</reference>
 <referencedColumn>5BC1D859-9AC9-1D55-BAB8-A8D47092B681</referencedColumn>
 <table>4DEACDC8-66AD-2E2F-6520-A057212299AD</table>

@@ -1,97 +1,60 @@
-select t.* from teams_view t where t.team_id=1;
+CREATE OR REPLACE TYPE ArrayInfo
+AS
+  OBJECT
+  (
+    AVG   NUMBER ,
+    std   NUMBER ,
+    ndim  NUMBER ,
+    dim1  NUMBER ,
+    dim2  NUMBER ,
+    dim3  NUMBER ,
+    dim4  NUMBER ,
+    dtype VARCHAR2 (20) ,
+    value LOB ) NOT FINAL ;
+  /
+show errors;
 
-create or replace view player_view 
+SELECT * FROM ALL_TABLES
+where table_name = 'PLAYERS';
 
-as
-  select p.name as p_name
-        , p.goals as p_goals
-        , d1.id   as p_i1_id
-        , d1.ndim as p_i1_std
-        , d2.id   as p_i2_id
-        , d2.ndim as p_i2_std
-    from players p
-      inner join array_data d1 on (p.image1_id=d1.id)
-      inner join array_data d2 on (p.image2_id=d2.id)
-  ;
-
-select * from player_view;
-
-select
-    t.id    as id
-  , t.name  as name
-  , t.wins  as wins
-  , t.loses as loses
-  , d1.std  as team_i1_std
-  , d2.id   as p_i2_id
-  , d2.ndim as p_i2_std
-from players p
-  inner join array_data d1 on (p.image1_id=d1.id)
-  inner join array_data d2 on (p.image2_id=d2.id)
+select 
+    column_name
+  , data_type
+  , data_precision
+  , data_scale
+from
+  user_tab_columns
+where
+  table_name = 'PLAYERS'
 ;
 
-select teams_view.*, players_view.* 
-from teams inner join players_views on teams_views.team_id=players_view.team_id
+select *
+from
+  user_tab_columns
+where
+  table_name = 'PLAYERS'
 ;
 
-select team_id 
-from teams_view natural join players_view
-where team_wins > 0 and player_goals > 9
-;
-
-select p.id
-from players p inner join teams t on p.teams_id=t.id
-where t.id=1
+select distinct teams.id
+from teams
+  inner join players on (teams.id = players.teams_id)
+  where players.goals > 2
 ;
 
 select
-      d.ndim 
-    , d.dim1 
-    , d.dim2 
-    , d.dim3 
-    , d.dim4 
-    , d.dtype
-    , d.value
-from array_data d where d.id=1
+    t.name
+  , t.wins
+  , t.loses
+  , t.pic1.ndim
+  , t.pic1.dim1
+  , t.pic1.dtype
+  , t.pic1.value 
+from teams t
+where t.id in (
+  select distinct teams.id
+  from teams
+    inner join players on (teams.id = players.teams_id)
+  where players.goals > 2
+)
 ;
 
-
-SELECT p.id AS players_id,
-  p.name,
-  p.image3.dim4,
-  p.image3.dtype
-FROM players p;
-
-SELECT player.id AS player_id,
-  player.name,
-  player.starts,
-  player.goals,
-  player.teams_id,
-  player.image1.avg,
-  player.image1.std,
-  player.image1.ndim,
-  player.image1.dim1,
-  player.image1.dim2,
-  player.image1.dim3,
-  player.image1.dim4,
-  player.image1.dtype,
-  player.image2.avg,
-  player.image2.std,
-  player.image2.ndim,
-  player.image2.dim1,
-  player.image2.dim2,
-  player.image2.dim3,
-  player.image2.dim4,
-  player.image2.dtype,
-  player.image3.avg,
-  player.image3.std,
-  player.image3.ndim,
-  player.image3.dim1,
-  player.image3.dim2,
-  player.image3.dim3,
-  player.image3.dim4,
-  player.image3.dtype
-FROM players player;
-
-select players.image3 from players;
-
-SELECT t.pic1.avg FROM teams t;

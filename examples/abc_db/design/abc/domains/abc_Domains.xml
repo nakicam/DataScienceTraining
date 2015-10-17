@@ -42,6 +42,26 @@
          <fileName>abc_Domains</fileName>
          <logicalDatatype>LOGDT029</logicalDatatype>
       </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer" id="C5E75EA1-97DB-4F86-1F13-F677B6571726">
+         <createdBy>rwk7t</createdBy>
+         <createdTime>2015-06-17 17:06:08 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <importedID>C5E75EA1-97DB-4F86-1F13-F677B6571726</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>8</dataTypeScale>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Double" id="DD857AFD-DE3D-CC89-2384-036878C9BC81">
+         <createdBy>rwk7t</createdBy>
+         <createdTime>2015-06-17 17:06:08 UTC</createdTime>
+         <ownerDesignName>abc</ownerDesignName>
+         <importedID>DD857AFD-DE3D-CC89-2384-036878C9BC81</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>abc_Domains</fileName>
+         <logicalDatatype>LOGDT020</logicalDatatype>
+      </Domain>
       <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_10" id="F7881008-B7B1-7432-978D-633C2EB5F431">
          <createdBy>J28976</createdBy>
          <createdTime>2015-03-04 22:04:26 UTC</createdTime>

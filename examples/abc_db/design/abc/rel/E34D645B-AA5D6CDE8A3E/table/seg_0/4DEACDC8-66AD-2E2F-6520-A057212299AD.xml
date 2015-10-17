@@ -41,8 +41,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="loses" id="5BC1D859-9AC9-1D55-BAB8-A8D47092B681">
@@ -53,8 +53,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>0</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<domain>675F0C0E-294E-825A-C93B-E20E8649CC16</domain>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="pic1" id="33CE2256-9E2D-CD67-204F-637B8FDEB376">
@@ -79,10 +79,9 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>05E97693-A48E-671F-B2C5-00220F836A1D</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.std" id="EC83D49D-2BB5-1D22-9B31-DE1D17978779">
@@ -94,10 +93,9 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>8F5707F0-DB79-23C8-3B73-48C4AEC2FD9B</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
-<dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<domain>DD857AFD-DE3D-CC89-2384-036878C9BC81</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.ndim" id="F59B8C13-AF37-642C-0034-96D5002D7FB1">
@@ -109,10 +107,11 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>A632C894-B687-5B1B-3139-D5FD57AA21A0</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.dim1" id="724CBB84-E4EA-CCF8-8406-5F8CB7B7C83B">
@@ -124,10 +123,11 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>281308D0-982E-B3D3-D24D-717660259CEB</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.dim2" id="DB840052-9948-CDC5-C485-52FC778D79D6">
@@ -139,10 +139,11 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>078BA7E2-7FA1-9C9E-1D55-671A030E55EC</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.dim3" id="742BE247-410F-92C2-60E2-0CD9BE5BF034">
@@ -154,10 +155,11 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>63EAEE66-8820-55BD-AE4A-77DB2A2C0D5A</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.dim4" id="10147D72-5D15-63FB-E28B-1B8E1F1CC414">
@@ -169,10 +171,11 @@
 <parentObject>33CE2256-9E2D-CD67-204F-637B8FDEB376</parentObject>
 <structAttributeID>B242078E-F7F7-290C-5CC4-FA51DF5D3203</structAttributeID>
 <useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
+<use>0</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>0</dataTypePrecision>
-<dataTypeScale>0</dataTypeScale>
+<dataTypeScale>8</dataTypeScale>
+<domain>C5E75EA1-97DB-4F86-1F13-F677B6571726</domain>
 <autoIncrementCycle>false</autoIncrementCycle>
 </nestedColumn>
 <nestedColumn name="pic1.dtype" id="D5568757-69BB-0252-5243-21C6DDB27D39">

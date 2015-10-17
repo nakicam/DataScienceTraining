@@ -43,7 +43,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>player_starts</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <headerAlias>player_starts</headerAlias>
 <expression>starts</expression>
 <reference>false</reference>
@@ -56,7 +56,7 @@
 <ownerDesignName>abc</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <alias>player_goals</alias>
-<dataType>INTEGER</dataType>
+<dataType>NUMBER</dataType>
 <headerAlias>player_goals</headerAlias>
 <expression>goals</expression>
 <reference>false</reference>
