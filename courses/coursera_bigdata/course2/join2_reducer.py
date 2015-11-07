@@ -32,5 +32,4 @@ for line in sys.stdin:
         current_key = key
 
 if current_key == key and current_key in abc_list:
-    print(abc_list)
     print( "{0} {1}".format(current_key, total)) 
