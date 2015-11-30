@@ -1,4 +1,4 @@
-function g = sigmoidGradient(z)
+function g_prime = sigmoidGradient(z)
 %SIGMOIDGRADIENT returns the gradient of the sigmoid function
 %evaluated at z
 %   g = SIGMOIDGRADIENT(z) computes the gradient of the sigmoid function
@@ -6,7 +6,7 @@ function g = sigmoidGradient(z)
 %   vector. In particular, if z is a vector or matrix, you should return
 %   the gradient for each element.
 
-g = zeros(size(z));
+g_prime = exp(-z)./((1+exp(-z)).^2);
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the gradient of the sigmoid function evaluated at

@@ -10,7 +10,8 @@ function W = randInitializeWeights(L_in, L_out)
 %
 
 % You need to return the following variables correctly 
-W = zeros(L_out, 1 + L_in);
+epsilon_int = 0.12;
+W = rand(L_out, L_in+1)*2*epsilon_int-epsilon_int;
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Initialize W randomly so that we break the symmetry while
@@ -19,7 +20,7 @@ W = zeros(L_out, 1 + L_in);
 % Note: The first row of W corresponds to the parameters for the bias units
 %
 
-
+ 
 
 
 
