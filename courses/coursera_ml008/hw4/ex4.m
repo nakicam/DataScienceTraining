@@ -18,13 +18,13 @@
 %% Initialization
 clear ; close all; clc
 
-%% Setup the parameters you will use for this exercise
+% Setup the parameters you will use for this exercise
 input_layer_size  = 400;  % 20x20 Input Images of Digits
 hidden_layer_size = 25;   % 25 hidden units
 num_labels = 10;          % 10 labels, from 1 to 10   
                           % (note that we have mapped "0" to label 10)
 
-%% =========== Part 1: Loading and Visualizing Data =============
+% =========== Part 1: Loading and Visualizing Data =============
 %  We start the exercise by first loading and visualizing the dataset. 
 %  You will be working with a dataset that contains handwritten digits.
 %
@@ -40,10 +40,6 @@ sel = randperm(size(X, 1));
 sel = sel(1:100);
 
 displayData(X(sel, :));
-
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
 
 %% ================ Part 2: Loading Parameters ================
 % In this part of the exercise, we load some pre-initialized 
@@ -80,8 +76,6 @@ J = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, ...
 fprintf(['Cost at parameters (loaded from ex4weights): %f '...
          '\n(this value should be about 0.287629)\n'], J);
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 %% =============== Part 4: Implement Regularization ===============
 %  Once your cost function implementation is correct, you should now
@@ -99,8 +93,6 @@ J = nnCostFunction(nn_params, input_layer_size, hidden_layer_size, ...
 fprintf(['Cost at parameters (loaded from ex4weights): %f '...
          '\n(this value should be about 0.383770)\n'], J);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
 
 
 %% ================ Part 5: Sigmoid Gradient  ================
@@ -115,9 +107,6 @@ g = sigmoidGradient([1 -0.5 0 0.5 1]);
 fprintf('Sigmoid gradient evaluated at [1 -0.5 0 0.5 1]:\n  ');
 fprintf('%f ', g);
 fprintf('\n\n');
-
-fprintf('Program paused. Press enter to continue.\n');
-pause;
 
 
 %% ================ Part 6: Initializing Pameters ================
@@ -146,8 +135,6 @@ fprintf('\nChecking Backpropagation... \n');
 %  Check gradients by running checkNNGradients
 checkNNGradients;
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 
 %% =============== Part 8: Implement Regularization ===============
@@ -165,11 +152,9 @@ checkNNGradients(lambda);
 debug_J  = nnCostFunction(nn_params, input_layer_size, ...
                           hidden_layer_size, num_labels, X, y, lambda);
 
-fprintf(['\n\nCost at (fixed) debugging parameters (w/ lambda = 10): %f ' ...
+fprintf(['\n\nCost at (fixed) debugging parameters (w/ lambda = 3): %f ' ...
          '\n(this value should be about 0.576051)\n\n'], debug_J);
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
 
 
 %% =================== Part 8: Training NN ===================
@@ -183,7 +168,7 @@ fprintf('\nTraining Neural Network... \n')
 
 %  After you have completed the assignment, change the MaxIter to a larger
 %  value to see how more training helps.
-options = optimset('MaxIter', 50);
+options = optimset('MaxIter', 400);
 
 %  You should also try different values of lambda
 lambda = 1;
@@ -205,9 +190,6 @@ Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
 Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
                  num_labels, (hidden_layer_size + 1));
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
-
 
 %% ================= Part 9: Visualize Weights =================
 %  You can now "visualize" what the neural network is learning by 
@@ -218,8 +200,6 @@ fprintf('\nVisualizing Neural Network... \n')
 
 displayData(Theta1(:, 2:end));
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 %% ================= Part 10: Implement Predict =================
 %  After training the neural network, we would like to use it to predict
