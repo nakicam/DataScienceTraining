@@ -76,75 +76,107 @@ def rand_initialize_weights(L_in, L_out, seed=1):
     result = np.random.rand(L_out, L_in+1)*2*eps - eps
     return result
 
-def grad_nn(theta1, theta2, X, y, K, lambda_param=0.0):  
+def forward_propagate(theta1, theta2, X):
+    a_1 = prepend_ones(X)
+    z_2 = a_1*theta1.T
+    a_2 = h(theta1, a_1)
+    a_2 = np.asmatrix(a_2)
+    a_2 = prepend_ones(a_2)
+    z_3 = a_2*theta2.T
+    a_3 = g(z3)
+    return a1, a2, a3, z2, z3
 
+def grad_nn(theta1, theta2, X, y, K, lambda_param=0.0):  
     m, n   = X.shape
     theta1 = np.asmatrix(theta1)
     theta2 = np.asmatrix(theta2)
 
     def prepend_ones(a):
         return np.roll(np.concatenate([a, np.asmatrix(np.ones((1,1)))], axis=1), shift=1)
-            
-    Delta_1 = np.zeros_like(theta1)
-    Delta_2 = np.zeros_like(theta2)
-    
-    for t in np.arange(m):
-        x_t = np.asmatrix(X[t])
-        y_t = np.asmatrix(y[t])
-        
-        #--------------------------------- #
-        # step 1: forward propagation
-        #--------------------------------- #
-        
-        # layer 1
-        a_1 = prepend_ones(x_t)
-        
-        # layer 2
-        z_2 = a_1*theta1.T
-        a_2 = h(theta1, a_1)
-        a_2 = np.asmatrix(a_2)
-        a_2 = prepend_ones(a_2)
-        
-                
-        # layer 3
-        #z_3 = a_2*theta2.T
-        a_3 = h(theta2, a_2)
-        a_3 = np.asmatrix(a_3)
-                
-        #--------------------------------- #
-        # step 2: compute delta3
-        #--------------------------------- #
-        
-        delta_3 = a_3 - y_t
-        
-        #--------------------------------- #
-        # step 3: compute delta2
-        #--------------------------------- #
-        
-        delta_2 = np.multiply((delta_3*theta2)[...,1:], g_prime(z_2))
-        
-        #--------------------------------- #
-        # step 4: compute Delta
-        #--------------------------------- #
-        
-        Delta_1 = Delta_1 + delta_2.T*a_1
-        Delta_2 = Delta_2 + delta_3.T*a_2
 
-    #--------------------------------- #
-    # step 5: compute Grad_J
-    #--------------------------------- #
+    # forward propagate
+    a1, a2, a3, z2, z3 = forward_propagate(theta1, theta2, X)
     
-    grad_J_1 = Delta_1/float(m)
-    grad_J_2 = Delta_2/float(m)
-    
-    #--------------------------------- #
-    # step 6: regularization
-    #--------------------------------- #
-    
-    grad_J_1[...,1:] += lambda_param*theta1[...,1:]/float(m)
-    grad_J_2[...,1:] += lambda_param*theta2[...,1:]/float(m)
-    
-    return grad_J_1, grad_J_2
+    # back propagate
+    assert y_vec.shape==a3.shape, "shape of y_vec and a3 is different"
+    sigma3 = a3 - y_vec
+    sigma2 = sigma3*theta2.T * g_prime(prepend_ones(z2)) 
+    sigma2 = sigma2[1:,:] 
+    accum1 = sigma2.dot(a1.T)/float(m)
+    accum2 = sigma3.dot(a2.T)/float(m)
+    accum1[:,1:] = accum1[:,1:] + (theta1[:,1:] * lamda / m)
+    accum2[:,1:] = accum2[:,1:] + (theta2[:,1:] * lamda / m)
+    return accum1, accum2
+
+# def grad_nn(theta1, theta2, X, y, K, lambda_param=0.0):  
+# 
+#     m, n   = X.shape
+#     theta1 = np.asmatrix(theta1)
+#     theta2 = np.asmatrix(theta2)
+# 
+#     def prepend_ones(a):
+#         return np.roll(np.concatenate([a, np.asmatrix(np.ones((1,1)))], axis=1), shift=1)
+#             
+#     Delta_1 = np.zeros_like(theta1)
+#     Delta_2 = np.zeros_like(theta2)
+#     
+#     for t in np.arange(m):
+#         x_t = np.asmatrix(X[t])
+#         y_t = np.asmatrix(y[t])
+#         
+#         #--------------------------------- #
+#         # step 1: forward propagation
+#         #--------------------------------- #
+#         
+#         # layer 1
+#         a_1 = prepend_ones(x_t)
+#         
+#         # layer 2
+#         z_2 = a_1*theta1.T
+#         a_2 = h(theta1, a_1)
+#         a_2 = np.asmatrix(a_2)
+#         a_2 = prepend_ones(a_2)
+#         
+#                 
+#         # layer 3
+#         #z_3 = a_2*theta2.T
+#         a_3 = h(theta2, a_2)
+#         a_3 = np.asmatrix(a_3)
+#                 
+#         #--------------------------------- #
+#         # step 2: compute delta3
+#         #--------------------------------- #
+#         
+#         delta_3 = a_3 - y_t
+#         
+#         #--------------------------------- #
+#         # step 3: compute delta2
+#         #--------------------------------- #
+#         
+#         delta_2 = np.multiply((delta_3*theta2)[...,1:], g_prime(z_2))
+#         
+#         #--------------------------------- #
+#         # step 4: compute Delta
+#         #--------------------------------- #
+#         
+#         Delta_1 = Delta_1 + delta_2.T*a_1
+#         Delta_2 = Delta_2 + delta_3.T*a_2
+# 
+#     #--------------------------------- #
+#     # step 5: compute Grad_J
+#     #--------------------------------- #
+#     
+#     grad_J_1 = Delta_1/float(m)
+#     grad_J_2 = Delta_2/float(m)
+#     
+#     #--------------------------------- #
+#     # step 6: regularization
+#     #--------------------------------- #
+#     
+#     grad_J_1[...,1:] += lambda_param*theta1[...,1:]/float(m)
+#     grad_J_2[...,1:] += lambda_param*theta2[...,1:]/float(m)
+#     
+#     return grad_J_1, grad_J_2
 
 def roll_params(theta1, theta2):
     theta1 = np.asarray(theta1)
@@ -157,6 +189,14 @@ def unroll_params(theta, shape1, shape2):
     theta2 = theta[size1:].reshape(shape2)
     return theta1, theta2    
 
+def unroll_params(theta, n_input_layers, n_hidden_layers, n_labels): 
+    theta1_size  = (n_input_layers+1) * n_hidden_layers
+    theta1_shape = (n_hidden_layers   , n_input_layers+1 )
+    theta2_shape = (n_labels          , n_hidden_layers+1)
+    theta1 = theta[:theta1_size].reshape(theta1_shape)
+    theta2 = theta[theta1_size:].reshape(theta2_shape)
+    return theta1, theta2    
+
 def get_y_vec(y, K):
     m     = y.shape[0]
     y_vec = np.zeros((m,K))
@@ -165,15 +205,18 @@ def get_y_vec(y, K):
     return y_vec
 
 def cost_wrapper(flat_theta, X, y_vec, K, lambda_param):
-    th1, th2 = unroll_params(flat_theta, theta1_rand.shape, theta2_rand.shape)
+    print("flat_theta[0:5] = ", flat_theta[0:5])
+#     th1, th2 = unroll_params(flat_theta, theta1_rand.shape, theta2_rand.shape)
+    th1, th2 = unroll_params(flat_theta, n_input_layers, n_hidden_layers, K)
     result = cost_nn(th1, th2, X, y_vec, K, lambda_param)
-    print("result of cost_nn = %f" % result)
+    print("result of cost_nn = %e" % result)
     assert(result!=np.inf)
     assert(result!=np.nan)
     return result
 
 def grad_wrapper(flat_theta, X, y_vec, K, lambda_param):
-    th1, th2 = unroll_params(flat_theta, theta1_rand.shape, theta2_rand.shape)
+#     th1, th2 = unroll_params(flat_theta, theta1_rand.shape, theta2_rand.shape)
+    th1, th2 = unroll_params(flat_theta, n_input_layers, n_hidden_layers, K)
     grad_J1, grad_J2 = grad_nn(th1, th2, X, y_vec, K, lambda_param)
     return roll_params(grad_J1, grad_J2)
 
@@ -187,12 +230,15 @@ def predict_nn(theta1, theta2, X):
 # inputs
 # ------------------------------------------------------------ #
 
-lambda_param = 1.0
-max_iter     = 10
-K            = 10
-theta1_rand  = np.asmatrix(rand_initialize_weights(400, 25))
-theta2_rand  = np.asmatrix(rand_initialize_weights(25 , 10))
-theta_rand   = roll_params(theta1_rand, theta2_rand)
+lambda_param    = 1.0
+max_iter        = 10
+K               = 10
+seed            = 1
+n_input_layers  = 400
+n_hidden_layers = 25
+theta1_rand     = np.asmatrix(rand_initialize_weights(n_input_layers , n_hidden_layers, seed=seed))
+theta2_rand     = np.asmatrix(rand_initialize_weights(n_hidden_layers, K              , seed=seed))
+theta_rand      = roll_params(theta1_rand, theta2_rand)
 
 # ------------------------------------------------------------ #
 # load data 
@@ -209,21 +255,31 @@ m, n   = X_orig.shape
 # optimize
 # ------------------------------------------------------------ #
 
-op_result = op.minimize(
-    fun=cost_wrapper, 
-#     jac=grad_wrapper, 
-    x0=theta_rand, 
+# op_result = op.minimize(
+#     fun=cost_wrapper, 
+# #     jac=grad_wrapper, 
+#     x0=theta_rand, 
+#     args=(X_orig, y_vec, K, lambda_param), 
+# #     method='CG', 
+#     options={'maxiter': max_iter, 'disp': True}
+# )
+op_result = scipy.optimize.fmin_cg(
+    f=cost_wrapper,
+    fprime=grad_wrapper,
+    x0=theta_rand,
     args=(X_orig, y_vec, K, lambda_param), 
-    method='CG', 
-    options={'maxiter': max_iter, 'disp': True}
+    maxiter=50, 
+    disp=True, 
+    full_output=True
 )
 
 # ------------------------------------------------------------ #
 # result 
 # ------------------------------------------------------------ #
 
-theta_fit              = op_result.x
-theta1_fit, theta2_fit = unroll_params(op_result.x, theta1_rand.shape, theta2_rand.shape)
+# theta_fit              = op_result.x
+theta_fit              = op_result[0]
+theta1_fit, theta2_fit = unroll_params(theta_fit, theta1_rand.shape, theta2_rand.shape)
 pred                   = predict_nn(theta1_fit, theta2_fit, X_orig)
 pred_df                = pd.DataFrame(data={
                             "pred" : np.asarray(pred  ).reshape(m,), 
