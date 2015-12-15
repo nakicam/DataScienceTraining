@@ -113,6 +113,9 @@ def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels,
 	accum1 = sigma2.dot( a1.T ) / m
 	accum2 = sigma3.dot( a2.T ) / m
 	if verbose:
+	    disp_array('X', X)
+	    disp_array('y', y)
+	    disp_array('yk', yk)
 	    disp_array('sigma2', sigma2)
 	    disp_array('sigma3', sigma3)
 	    disp_array('accum1_m', sigma2.dot( a1.T ))
@@ -128,6 +131,9 @@ def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels,
 	    disp_array('accum1', accum1)
 	    disp_array('accum2', accum2)
 	    disp_array('accum' , accum )
+
+	import numpy
+	numpy.save("yk", yk)
 
 	return accum
 
