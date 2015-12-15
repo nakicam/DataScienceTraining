@@ -80,7 +80,9 @@ def computeCost( nn_params, input_layer_size, hidden_layer_size, num_labels, X, 
 	left_term 	= sum(term1 - term2) / m
 	right_term 	= sum(theta1[:,1:] ** 2) + sum(theta2[:,1:] ** 2)
 
-	return left_term + right_term * lamda / (2 * m)
+	result = left_term + right_term * lamda / (2 * m)
+	print('cost = %f'%result)
+	return result
 
 def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lamda, yk = None, X_bias = None, verbose=False):
 	m, n 				= shape( X )
@@ -88,7 +90,7 @@ def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels,
 	a1, a2, a3, z2, z3 	= feedForward( theta1, theta2, X, X_bias )
 
 	def disp_array(n, a):
-	    print('%s = %s'%(n, a.shape), a[0:5])
+	    print('%s = %s'%(n, a.shape), a)
 	    
 	if verbose:
 	    disp_array('a1', a1)
@@ -103,6 +105,9 @@ def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels,
 		assert shape(yk) == shape(a3), "Error, shape of recoded y is different from a3"
 
 	sigma3 = a3 - yk
+	if verbose:
+		disp_array('theta2.T.dot( sigma3 )', theta2.T.dot( sigma3 ))
+		disp_array('sigmoidGradient( r_[ones((1, m)), z2 ]', sigmoidGradient( r_[ones((1, m)), z2 ]))
 	sigma2 = theta2.T.dot( sigma3 ) * sigmoidGradient( r_[ones((1, m)), z2 ] )
 	sigma2 = sigma2[1:,:]
 	accum1 = sigma2.dot( a1.T ) / m
@@ -110,13 +115,21 @@ def computeGradient( nn_params, input_layer_size, hidden_layer_size, num_labels,
 	if verbose:
 	    disp_array('sigma2', sigma2)
 	    disp_array('sigma3', sigma3)
+	    disp_array('accum1_m', sigma2.dot( a1.T ))
+	    disp_array('accum2_m', sigma3.dot( a2.T ))
 	    disp_array('accum1', accum1)
 	    disp_array('accum2', accum2)
 
 	accum1[:,1:] = accum1[:,1:] + (theta1[:,1:] * lamda / m)
 	accum2[:,1:] = accum2[:,1:] + (theta2[:,1:] * lamda / m)
 	accum = array([accum1.T.reshape(-1).tolist() + accum2.T.reshape(-1).tolist()]).T
-	return ndarray.flatten(accum)
+	accum = ndarray.flatten(accum) 
+	if verbose:
+	    disp_array('accum1', accum1)
+	    disp_array('accum2', accum2)
+	    disp_array('accum' , accum )
+
+	return accum
 
 def nnCostFunction( nn_params, input_layer_size, hidden_layer_size, num_labels, X, y, lamda ):
 	m, n 				= shape( X )
@@ -349,7 +362,8 @@ def part2_5():
 	print J
 
 def part2_6():
-	mat = scipy.io.loadmat( "/Users/rwk7t/Development/dst/courses/coursera_ml008/hw4/ex4data1.mat" )
+	import os
+	mat = scipy.io.loadmat("%s/courses/coursera_ml008/hw4/ex4data1.mat"%os.environ['DST'])
 	X, y = mat['X'], mat['y']
 	m, n = shape(X)
 
@@ -376,6 +390,7 @@ def part2_6():
 	theta1, theta2 		= paramUnroll( result[0], input_layer_size, hidden_layer_size, num_labels )
 	numpy.save('theta1', theta1) 
 	numpy.save('theta2', theta2) 
+	print(theta1, theta2)
 	
 
 # 	displayData( X, theta1, theta2 )
