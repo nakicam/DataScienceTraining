@@ -47,6 +47,7 @@ fprintf('\nRunning PCA on example dataset.\n\n');
 
 %  Before running PCA, it is important to first normalize X
 [X_norm, mu, sigma] = featureNormalize(X);
+fprintf('\nX_norm, mu, sigma = ', X_norm, mu, sigma);
 
 %  Run PCA
 [U, S] = pca(X_norm);
