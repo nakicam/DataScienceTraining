@@ -122,19 +122,19 @@ while i < abs(length)                                      % while not finished
     A = 6*(f2-f3)/z3+3*(d2+d3);                      % make cubic extrapolation
     B = 3*(f3-f2)-z3*(d3+2*d2);
     z2 = -d2*z3*z3/(B+sqrt(B*B-A*d2*z3*z3));        % num. error possible - ok!
-    if ~isreal(z2) || isnan(z2) || isinf(z2) || z2 < 0 % num prob or wrong sign?
+    if ~isreal(z2) || isnan(z2) || isinf(z2) || z2 < 0   % num prob or wrong sign?
       if limit < -0.5                               % if we have no upper limit
         z2 = z1 * (EXT-1);                 % the extrapolate the maximum amount
       else
         z2 = (limit-z1)/2;                                   % otherwise bisect
       end
-    elseif (limit > -0.5) && (z2+z1 > limit)         % extraplation beyond max?
+    elseif (limit > -0.5) && (z2+z1 > limit)          % extraplation beyond max?
       z2 = (limit-z1)/2;                                               % bisect
     elseif (limit < -0.5) && (z2+z1 > z1*EXT)       % extrapolation beyond limit
       z2 = z1*(EXT-1.0);                           % set to extrapolation limit
     elseif z2 < -z3*INT
       z2 = -z3*INT;
-    elseif (limit > -0.5) && (z2 < (limit-z1)*(1.0-INT))  % too close to limit?
+    elseif (limit > -0.5) && (z2 < (limit-z1)*(1.0-INT))   % too close to limit?
       z2 = (limit-z1)*(1.0-INT);
     end
     f3 = f2; d3 = d2; z3 = -z2;                  % set point 3 equal to point 2

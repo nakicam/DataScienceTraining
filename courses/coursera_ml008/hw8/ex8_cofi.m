@@ -39,8 +39,6 @@ imagesc(Y);
 ylabel('Movies');
 xlabel('Users');
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 %% ============ Part 2: Collaborative Filtering Cost Function ===========
 %  You will now implement the cost function for collaborative filtering.
@@ -52,8 +50,11 @@ pause;
 load ('ex8_movieParams.mat');
 
 %  Reduce the data set size so that this runs faster
-num_users = 4; num_movies = 5; num_features = 3;
+num_users = 4; 
+num_movies = 5; 
+num_features = 3;
 X = X(1:num_movies, 1:num_features);
+
 Theta = Theta(1:num_users, 1:num_features);
 Y = Y(1:num_movies, 1:num_users);
 R = R(1:num_movies, 1:num_users);
@@ -65,8 +66,6 @@ J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, num_movies, ...
 fprintf(['Cost at loaded parameters: %f '...
          '\n(this value should be about 22.22)\n'], J);
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 
 %% ============== Part 3: Collaborative Filtering Gradient ==============
@@ -79,8 +78,6 @@ fprintf('\nChecking Gradients (without regularization) ... \n');
 %  Check gradients by running checkNNGradients
 checkCostFunction;
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 
 %% ========= Part 4: Collaborative Filtering Cost Regularization ========
@@ -96,9 +93,6 @@ J = cofiCostFunc([X(:) ; Theta(:)], Y, R, num_users, num_movies, ...
 fprintf(['Cost at loaded parameters (lambda = 1.5): %f '...
          '\n(this value should be about 31.34)\n'], J);
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
-
 
 %% ======= Part 5: Collaborative Filtering Gradient Regularization ======
 %  Once your cost matches up with ours, you should proceed to implement 
@@ -111,8 +105,6 @@ fprintf('\nChecking Gradients (with regularization) ... \n');
 %  Check gradients by running checkNNGradients
 checkCostFunction(1.5);
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 
 %% ============== Part 6: Entering ratings for a new user ===============
@@ -153,9 +145,6 @@ for i = 1:length(my_ratings)
     end
 end
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
-
 
 %% ================== Part 7: Learning Movie Ratings ====================
 %  Now, you will train the collaborative filtering model on a movie rating 
@@ -190,15 +179,16 @@ X = randn(num_movies, num_features);
 Theta = randn(num_users, num_features);
 
 initial_parameters = [X(:); Theta(:)];
+fprintf('inital cost: %f\n', cofiCostFunc(initial_parameters, Y, R, num_users, num_movies, num_features, 0.0))
 
 % Set options for fmincg
 options = optimset('GradObj', 'on', 'MaxIter', 100);
 
 % Set Regularization
 lambda = 10;
-theta = fmincg (@(t)(cofiCostFunc(t, Y, R, num_users, num_movies, ...
-                                num_features, lambda)), ...
-                initial_parameters, options);
+J = @(t)(cofiCostFunc(t, Y, R, num_users, num_movies, ...
+                                num_features, lambda));
+theta = fmincg (J,initial_parameters, options);
 
 % Unfold the returned theta back into U and W
 X = reshape(theta(1:num_movies*num_features), num_movies, num_features);
@@ -207,8 +197,6 @@ Theta = reshape(theta(num_movies*num_features+1:end), ...
 
 fprintf('Recommender system learning completed.\n');
 
-fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
 
 %% ================== Part 8: Recommendation for you ====================
 %  After training the model, you can now make recommendations by computing

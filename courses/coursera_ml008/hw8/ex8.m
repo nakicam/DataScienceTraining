@@ -15,10 +15,10 @@
 %  or any other files other than those mentioned above.
 %
 
-%% Initialization
+% Initialization
 clear ; close all; clc
 
-%% ================== Part 1: Load Example Dataset  ===================
+% ================== Part 1: Load Example Dataset  ===================
 %  We start this exercise by using a small dataset that is easy to
 %  visualize.
 %
@@ -38,9 +38,6 @@ plot(X(:, 1), X(:, 2), 'bx');
 axis([0 30 0 30]);
 xlabel('Latency (ms)');
 ylabel('Throughput (mb/s)');
-
-fprintf('Program paused. Press enter to continue.\n');
-pause
 
 
 %% ================== Part 2: Estimate the dataset statistics ===================
@@ -65,14 +62,12 @@ visualizeFit(X,  mu, sigma2);
 xlabel('Latency (ms)');
 ylabel('Throughput (mb/s)');
 
-fprintf('Program paused. Press enter to continue.\n');
-pause;
 
 %% ================== Part 3: Find Outliers ===================
 %  Now you will find a good epsilon threshold using a cross-validation set
 %  probabilities given the estimated Gaussian distribution
-% 
 
+% use the fit parameters from the training set
 pval = multivariateGaussian(Xval, mu, sigma2);
 
 [epsilon F1] = selectThreshold(yval, pval);
@@ -87,9 +82,6 @@ outliers = find(p < epsilon);
 hold on
 plot(X(outliers, 1), X(outliers, 2), 'ro', 'LineWidth', 2, 'MarkerSize', 10);
 hold off
-
-fprintf('Program paused. Press enter to continue.\n');
-pause;
 
 %% ================== Part 4: Multidimensional Outliers ===================
 %  We will now use the code from the previous part and apply it to a 
@@ -117,7 +109,7 @@ fprintf('Best epsilon found using cross-validation: %e\n', epsilon);
 fprintf('Best F1 on Cross Validation Set:  %f\n', F1);
 fprintf('# Outliers found: %d\n', sum(p < epsilon));
 fprintf('   (you should see a value epsilon of about 1.38e-18)\n\n');
-pause
+
 
 
 

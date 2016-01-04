@@ -29,6 +29,11 @@ num_users = size(Y, 2);
 num_movies = size(Y, 1);
 num_features = size(Theta_t, 2);
 
+% size(X)
+% size(Theta)
+% size(Y)
+% size(R)
+
 numgrad = computeNumericalGradient( ...
                 @(t) cofiCostFunc(t, Y, R, num_users, num_movies, ...
                                 num_features, lambda), [X(:); Theta(:)]);
