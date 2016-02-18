@@ -1,0 +1,9 @@
+user_id,user_name,age
+0,Ryan,38
+1,Randy,38
+2,Jen,32
+3,Scarlett,1
+4,Mike,35
+5,Reid,40
+6,Clark,65
+7,Dianne,65

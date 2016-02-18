@@ -1,0 +1,7 @@
+program_id, program_name, program_start_time, program_end_time, duration, is_rerun, series_id (can be null), genre
+0, Sesame Street E1, 8:00, 8:30 , 30, True, 0, kids 
+1, Sesame Street E2, 8:00, 8:30 , 30, True, 0, kids 
+2, Hart of Dixie E1, 20:00, 21:00, 60, False, 1, drama
+3, Hart of Dixie E2, 20:00, 21:00, 60, False, 1, drama 
+3, Premier League G1 , 4:00, 5:00, 60, False, 2, sports 
+3, Premier League G2 , 6:00, 8:00, 60, False, 2, sports 
