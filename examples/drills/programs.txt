@@ -1,0 +1,7 @@
+program_id,program_name,program_start_time,program_end_time,duration,is_rerun,series_id,genre
+0,Sesame Street E1,8:00,8:30,30,True,0,kids
+1,Sesame Street E2,8:00,8:30,30,True,0,kids
+2,Hartof Dixie E1,20:00,21:00,60,False,1,drama
+3,Hartof Dixie E2,20:00,21:00,60,False,1,drama
+4,Premier League G1,4:00,6:00,60,False,2,sports
+5,Premier League G2,6:00,8:00,60,False,2,sports
